@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmanagerdesk_docs=globalThis.webpackChunkmanagerdesk_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/managerdesk-docs/blog","blogTitle":"Blog","authorsListPath":"/managerdesk-docs/blog/authors"}')}}]);
