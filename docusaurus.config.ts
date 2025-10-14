@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'ManagerDash Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Empowering you to lead, learn, and grow your team.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
