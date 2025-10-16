@@ -36,8 +36,8 @@ Each competency uses a 0-4 rating scale:
 
 | Rating | Label | Meaning | Color |
 |--------|-------|---------|-------|
-| 0 | Not a focus | Below expectations, not a development priority | Gray |
-| 1 | Needs focus | Below expectations, development priority | Orange |
+| 0 | Not a focus | Not a development priority | Gray |
+| 1 | Needs focus | Development priority | Orange |
 | 2 | On track | Meets expectations | Blue |
 | 3 | Outperform | Exceeds expectations | Green |
 | 4 | Exceptional | Significantly exceeds expectations | Purple |

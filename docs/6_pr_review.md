@@ -23,25 +23,7 @@ To use PR Review, you need:
 
 ## Setting Up GitHub Integration
 
-### Creating a GitHub Token
-
-1. Go to GitHub.com → Settings → Developer settings → Personal access tokens
-2. Click "Generate new token (classic)"
-3. Name it "ManagerDash"
-4. Select scopes:
-   - `repo` (all sub-scopes)
-   - `read:org`
-5. Generate and copy the token
-6. **Important**: Save it securely; you won't see it again
-
-### Adding Token to ManagerDash
-
-1. Open ManagerDash
-2. Go to Settings (gear icon in sidebar)
-3. Click **Preferences**
-4. Find **GitHub Token** field
-5. Paste your token
-6. Click **Save**
+See "GitHub Token Setup" for instructions on how to generate a token and add it to ManagerDash
 
 ## Fetching Pull Requests
 
@@ -56,26 +38,13 @@ To use PR Review, you need:
 5. Wait for the fetch to complete (may take several seconds)
 6. PRs appear grouped by repository
 
-### Date Range Guidelines
-
-**Common Ranges**:
-- **Last Week**: 7 days (default)
-- **Last Month**: 30 days
-- **Last Quarter**: 90 days
-- **Last Year**: 365 days
-
-**Tips**:
-- Use shorter ranges for detailed reviews
-- Use longer ranges for performance summaries
-- Align with review periods (quarterly, semi-annual)
-
 ### What Gets Fetched
 
 The system fetches:
 - **Closed PRs only**: Merged or closed (not open PRs)
 - **Author Match**: PRs where the person is the author
 - **Date Filter**: PRs closed within the selected range
-- **All Repos**: Across all repositories they have access to
+- **All Repos**: Across all repositories they (and your token) have access to
 
 ### PR Data Included
 
@@ -96,44 +65,51 @@ For each PR:
 
 PRs are rated using a three-level system:
 
-| Symbol | Rating | Color | Meaning |
-|--------|--------|-------|---------|
-| - | Below | Red | Below expectations |
-| = | Meeting | Yellow | Meets expectations |
-| + | Exceeding | Green | Exceeds expectations |
+| Symbol | Color | Meaning |
+|--------|-------|---------|
+| - | Yellow | Feedback opportunity |
+| = | Blue | Meets expectations |
+| + |  Green | Exceeds expectations |
 
 ### How to Rate
 
 1. Find the PR in the list
 2. Click one of the three colored circles:
-   - **Red** (left): Below expectations
-   - **Yellow** (middle): Meeting expectations
+   - **Yellow** (left): Feedback opportunity
+   - **Blue** (middle): Meeting expectations
    - **Green** (right): Exceeding expectations
 3. The circle glows and enlarges when selected
 4. Rating saves automatically
 
 ### Rating Criteria
 
-**Below Expectations (-)**:
+**Feedback opportunity (-)**:
+Rating a pull request as a feedback opportunity is a way for managers to find trends in technical contributions, not as an error tally. It should be relative to the engineer's past performance and experience level. For example. A PR from an early career engineer that undergoes multiple rounds of review may suggest a mini retro in a 1:1 to ensure they are learning from the experience. A PR from a more senior engineer that requires significant rework may suggest a larger coaching conversation around doing more thorough planning or technical design. 
+
+Here are a few other reasons why you may mark a PR as a feedback opportunity:
+
 - Requires significant rework
 - Multiple rounds of review needed
-- Poor code quality or design
-- Incomplete testing
-- Lacks documentation
-- Breaks existing functionality
+- Poor code quality or design, or would have benefitted from additional planning
+- Incomplete testing or documentation
+- Breaks existing functionality/needs to be reverted
+
+When you mark a PR as a Feedback Opportunity, your notes will also be recorded as pending feedback.
 
 **Meeting Expectations (=)**:
-- Standard quality
+A PR is Meeting Expectations if it is a good representation of the contribution expected from an engineer at any level. What is defined as quality contributions will vary between companies and teams, but some examples of contributions that meet expectations are:
+
+- Clean, well-structured code
 - Normal review process
-- Acceptable code quality
 - Basic testing included
 - Clear purpose and implementation
 - Minor feedback addressed
+- Descriptive test cases
 
 **Exceeding Expectations (+)**:
+A PR is Exceeding Expectations if it represents an outstanding contribution from an engineer who is operating above their level. For an entry-level engineer, an exceptional contribution could be one that fixes a tricky race-condition. For a more senior engineer, an exceptional contribution could be one that solves an entire class of problems through a clear refactor. Some other reasons why a contribution may be rated as exceeding expectations:
+
 - Exceptional quality
-- Minimal review needed
-- Clean, well-structured code
 - Comprehensive testing
 - Great documentation
 - Handles edge cases
@@ -143,13 +119,12 @@ PRs are rated using a three-level system:
 
 **Rate PRs When**:
 - You've reviewed the PR thoroughly
-- It's been merged or closed
 - You have enough context to evaluate
-- Preparing for performance reviews
+- The contribution is meaningful (ie: not bumping a dependency)
+- It would provide good context during a performance review
 
 **Don't Rate If**:
 - You haven't reviewed it
-- It's still in draft
 - You lack context to judge
 - It's trivial (typo fixes, etc.)
 
@@ -184,7 +159,7 @@ Notes help you:
 **Examples**:
 
 ```
-Below (-):
+Not meeting (-):
 "Required 3 rounds of review. Initial implementation missed 
 error handling and had unclear variable names. Eventually 
 got to acceptable state but needed significant guidance."
@@ -201,38 +176,6 @@ benchmarks and documentation. Reduced query time by 80%.
 Excellent example for the team."
 ```
 
-## Organizing PR Results
-
-### Grouping by Repository
-
-PRs are automatically grouped by repository:
-- Each repository has a collapsible section
-- Shows count: "repo-name (5)"
-- Click to expand/collapse
-
-### Collapsing Repositories
-
-1. Click the **arrow icon** next to repository name
-2. Repository collapses, hiding its PRs
-3. Useful for focusing on specific repos
-4. Click again to expand
-
-### PR Counts
-
-- **Total PRs**: Shown at top of results
-- **Per Repository**: In repository header
-- **Rated vs Unrated**: Visual indicator on each PR
-
-## Viewing PR Details
-
-### PR Card Information
-
-Each PR card shows:
-- **Title**: PR name (with rating if rated)
-- **Repository and Number**: e.g., "my-repo #123"
-- **Rating Lights**: The three-circle selector
-- **Notes Field**: If PR is rated
-
 ### Opening in GitHub
 
 Click the **PR title** to open in your browser:
@@ -241,32 +184,16 @@ Click the **PR title** to open in your browser:
 - See code changes
 - Check review comments
 
-### Metrics Display
-
-At the bottom of each PR card:
-- **Created**: When PR was opened
-- **Closed**: When PR was merged/closed
-- **Changes**: +additions -deletions
-- **Files**: Number of files changed
-- **Comments**: Total discussion comments
-
-### Labels
-
-If the PR has GitHub labels:
-- They appear as badges
-- Help categorize PRs
-- Useful for filtering (in your mind)
-
 ## Common Workflows
 
-### Weekly PR Review
+### Weekly Review
 
 ```
 Friday:
 1. Select team member
-2. Set date range to last 7 days
+2. Set date range to last 7 days (this is the default)
 3. Fetch PRs
-4. Rate each PR
+4. Rate contributions of note
 5. Add quick notes
 6. Repeat for each team member
 ```
@@ -276,11 +203,10 @@ Friday:
 ```
 End of month:
 1. Set date range to last 30 days
-2. Fetch PRs
+2. Fetch PRs (or view PRs already reviewed)
 3. Review all PRs for patterns
 4. Rate and add detailed notes
 5. Include in monthly 1-on-1
-6. Reference in monthly report
 ```
 
 ### Quarterly Review Prep
@@ -293,19 +219,7 @@ End of month:
 4. Add comprehensive notes
 5. Look for patterns (improvement/decline)
 6. Generate report
-7. Use in performance discussion
-```
-
-### PR Quality Discussion
-
-```
-During 1-on-1:
-1. Open PR Review tab
-2. Filter to recent PRs
-3. Show rated PRs
-4. Discuss Below ratings (coaching)
-5. Celebrate Exceeding ratings
-6. Set goals based on patterns
+7. Use in performance discussions or promotion pitch
 ```
 
 ## Best Practices
@@ -322,42 +236,17 @@ During 1-on-1:
 
 1. **Be Timely**: Add notes within days of merge
 2. **Be Specific**: Reference concrete issues or wins
-3. **Be Balanced**: Note good and bad
+3. **Be Balanced**: Note good the good work you want to highlight, as well as any opportunities for growth
 4. **Be Professional**: Focus on work, not person
 5. **Be Future-Focused**: Help your future self remember
-
-### Fetching Strategy
-
-1. **Regular Intervals**: Weekly or bi-weekly
-2. **Before 1-on-1s**: Always fetch before meetings
-3. **Shorter Ranges**: More accurate for recent work
-4. **Longer Ranges**: Good for trend analysis
-5. **Performance Reviews**: Fetch full review period
-
-### Integration with Other Features
-
-**With Goals**:
-- Create goals to improve PR quality
-- Track goal progress through PR ratings
-- Reference specific PRs in goal milestones
-
-**With Skills**:
-- PR ratings support code quality competency
-- Use PR notes in skills assessment notes
-- Link PR patterns to skill development
-
-**With Feedback**:
-- Convert PR observations into feedback
-- Reference PRs when giving feedback
-- Use PR quality in feedback discussions
 
 ## Reporting
 
 PR data appears in reports:
 
 ### Individual Reports
-- Total PRs in period
-- Rating breakdown (Below/Meeting/Exceeding)
+- Total rated PRs in period
+- Rating breakdown (Not meeting/Meeting/Exceeding)
 - Individual PR details
 - Notes included
 - Metrics summary
@@ -370,19 +259,6 @@ Reports include:
 - Dates and metrics
 - Notes for context
 - Markdown formatted
-
-## Tips and Tricks
-
-1. **Rate While Fresh**: Rate within 24 hours of merge
-2. **Use Notes Liberally**: Future you will thank you
-3. **Pattern Recognition**: Look for trends in ratings
-4. **Celebrate Wins**: Don't just note problems
-5. **Quick Ratings**: If unsure, rate Meeting (=) and note why
-6. **Batch Processing**: Rate all PRs at once for efficiency
-7. **Reference in 1-on-1s**: Share screen, walk through PRs
-8. **Track Improvement**: Compare quarters to show growth
-9. **Link to Goals**: Reference PRs when discussing goals
-10. **Export for Reviews**: Include in performance review docs
 
 ## Common Issues
 
@@ -429,55 +305,6 @@ Reports include:
 - Save in Preferences
 - Try fetching again
 
-## Advanced Features
-
-### Date Range Strategies
-
-**Sprint-Based**:
-- Align with 2-week sprints
-- Fetch at sprint end
-- Use for sprint retrospectives
-
-**Month-Based**:
-- Calendar month ranges
-- Good for monthly check-ins
-- Easy to remember and repeat
-
-**Custom Periods**:
-- Project-specific dates
-- Release cycles
-- Incident timeframes
-
-### Rating Calibration
-
-Meet with other managers to:
-- Review sample PRs together
-- Discuss what each rating means
-- Align on standards
-- Ensure fairness across teams
-
-### Historical Tracking
-
-While ManagerDash doesn't track changes over time natively:
-- Take screenshots of rating summaries
-- Export reports quarterly
-- Keep notes on improvement trends
-- Reference in annual reviews
-
-### Integration with GitHub
-
-The system integrates with GitHub's:
-- Pull Request API
-- Repository data
-- Labels and metadata
-- User activity
-
-But does not:
-- Modify PRs
-- Add comments
-- Change labels
-- Affect GitHub data
-
 ## Privacy and Security
 
 ### Token Security
@@ -499,15 +326,6 @@ But does not:
 
 While viewing PRs:
 - **Tab**: Navigate between PRs
-- **1, 2, 3**: Quick rate (Below, Meeting, Exceeding)
+- **1, 2, 3**: Quick rate (Not meeting, Meeting, Exceeding)
 - **Enter**: Expand/collapse repository
 - **Click Title**: Open in GitHub
-
-## Future Enhancements
-
-Consider requesting:
-- Filtering by repository
-- Sorting by rating
-- Comparing periods
-- Rating statistics
-- Export rating summary

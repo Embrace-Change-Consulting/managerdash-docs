@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "One place for all your notes",
-    Svg: require("@site/static/img/light-mode/consolidation.svg").default,
+    Svg: require("@site/static/img/consolidation.svg").default,
     description: (
       <>
         It helps you track commitments, resourcing, and capture feedback—all in
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Focus on What Matters",
-    Svg: require("@site/static/img/light-mode/focus.svg").default,
+    Svg: require("@site/static/img/focus.svg").default,
     description: (
       <>
         With all local storage, ManagerDash keeps your data safe, and keeps you
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Export when you need it",
-    Svg: require("@site/static/img/light-mode/report.svg").default,
+    Svg: require("@site/static/img/report.svg").default,
     description: (
       <>
         Export your data in markdown for quarterly check-ins and performance

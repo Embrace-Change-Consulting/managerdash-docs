@@ -108,11 +108,7 @@ Reports refresh when:
 
 **Displays**:
 - Total PR count
-- Rating distribution:
-  - Below expectations (-)
-  - Meeting expectations (=)
-  - Exceeding expectations (+)
-  - Unrated
+- Rating distribution
 - Individual PR details
 
 **For Each PR**:
