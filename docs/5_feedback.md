@@ -52,6 +52,28 @@ For more detailed feedback entry:
    - **Tags**: Comma-separated (e.g., "code review, collaboration")
 5. Click **Save**
 
+### From PR Reviews (Automatic)
+
+ManagerDash can automatically generate feedback from your PR reviews:
+
+1. Navigate to a person's **PR Review** tab
+2. Review a pull request and evaluate it
+3. When marking a PR as **"Feedback Opportunity"**:
+   - Feedback is automatically created in draft status
+   - Content includes PR title, your review comments, and evaluation
+   - Tagged automatically with "PR Review" and the PR number
+   - Status set to "Preparing (Draft)" for you to review before delivery
+4. Find the auto-generated feedback in:
+   - The person's **Feedback** tab
+   - Your **Home Dashboard** under "Drafts"
+5. Edit the feedback to refine before marking as delivered
+
+**Benefits**:
+- Captures specific examples from code reviews
+- Links feedback directly to technical work
+- Preserves context (PR number, date, comments)
+- Streamlines feedback collection workflow
+
 ## Editing Feedback
 
 ### From Feedback List
@@ -250,6 +272,13 @@ Use multiple filters together:
    - Quarterly: Use for performance discussions
 
 ### Integration with Other Features
+
+**With PR Reviews**:
+- Mark PRs as "Feedback Opportunity" to auto-generate feedback
+- Auto-generated feedback includes PR context and your comments
+- Feedback tagged with "PR Review" and PR number
+- Review and refine auto-generated feedback before delivery
+- Provides concrete examples for technical feedback
 
 **With Goals**:
 - Reference feedback when setting goals
