@@ -249,7 +249,7 @@ Goal: "Ship New Dashboard Feature"
 ```
 Goal: "Improve Technical Leadership"
 ├─ Milestone: Lead 2 design reviews
-├─ Milestone: Mentor junior engineer
+├─ Milestone: Mentor early career engineer
 ├─ Milestone: Present at team tech talk
 └─ Milestone: Document architecture decisions
 ```
@@ -313,4 +313,3 @@ When editing goals or milestones:
 - **⌘/Ctrl + Enter**: Save changes (in milestone description)
 - **Tab**: Move to next field
 - **Shift + Tab**: Move to previous field
-

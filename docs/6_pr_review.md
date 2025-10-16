@@ -229,7 +229,7 @@ End of month:
 1. **Define Standards**: Document what each rating means for your team
 2. **Calibrate Regularly**: Discuss ratings with other leads
 3. **Context Matters**: Consider complexity and scope
-4. **Be Fair**: Don't compare junior to senior
+4. **Be Fair**: Don't compare early career to senior
 5. **Trend Over Time**: Look for improvement patterns
 
 ### Note-Taking

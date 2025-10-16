@@ -17,7 +17,7 @@ Seniority levels help you classify team members by experience, responsibility, a
 - Team composition analysis
 
 **Examples:**
-- Junior Engineer → Senior Engineer → Staff Engineer
+- Early Career Engineer → Senior Engineer → Staff Engineer
 - IC1 → IC2 → IC3 → IC4
 - Developer → Senior Developer → Lead Developer → Principal
 
@@ -27,7 +27,7 @@ Seniority levels help you classify team members by experience, responsibility, a
 
 **Contextual Assessment:**
 - Skills ratings make more sense with level context
-- "On track" for Junior ≠ "On track" for Senior
+- "On track" for Early Career ≠ "On track" for Senior
 - Compare people at same level fairly
 
 **Career Development:**
@@ -82,7 +82,7 @@ Seniority levels help you classify team members by experience, responsibility, a
 
 **Title** (required):
 - Full level name
-- Examples: "Junior Engineer", "Senior Engineer"
+- Examples: "Early Career Engineer", "Senior Engineer"
 - What you'll see most often
 - Be specific and descriptive
 
@@ -102,10 +102,10 @@ Seniority levels help you classify team members by experience, responsibility, a
 
 #### Software Engineering Ladder
 
-**Level 1: Junior Engineer**
+**Level 1: Early Career Engineer**
 ```
 Code: JR
-Title: Junior Engineer
+Title: Early Career Engineer
 Description: Early career engineer (0-2 years). Learning fundamentals, 
 requires regular guidance. Focuses on well-defined tasks. Building 
 technical foundation and professional skills.
@@ -117,7 +117,7 @@ Code: ENG
 Title: Engineer
 Description: Mid-level engineer (2-5 years). Works independently on 
 defined projects. Solid technical fundamentals. Contributes to code 
-reviews and team discussions. Occasional mentoring of junior engineers.
+reviews and team discussions. Occasional mentoring of early career engineers.
 ```
 
 **Level 3: Senior Engineer**
@@ -192,10 +192,10 @@ influence. Develops senior ICs. Sets standards and direction.
 
 #### Simplified Three-Tier
 
-**Junior:**
+**Early Career:**
 ```
 Code: JUN
-Title: Junior Developer
+Title: Early Career Developer
 Description: 0-3 years experience. Learning phase. Requires regular 
 guidance. Focuses on skill development and task execution.
 ```
@@ -393,7 +393,7 @@ Drives projects. Influences team decisions. Handles complex problems.
 
 **Level Context for Ratings:**
 - "On track" means different things at different levels
-- Junior at "On track" for basics
+- Early career at "On track" for basics
 - Senior at "On track" for advanced skills
 - Set expectations accordingly
 
@@ -406,7 +406,7 @@ Drives projects. Influences team decisions. Handles complex problems.
 ### Goals
 
 **Level-Appropriate Goals:**
-- Junior: Learning, execution, foundation
+- Early Career: Learning, execution, foundation
 - Mid: Independence, consistency, breadth
 - Senior: Leadership, mentoring, strategy
 
@@ -434,7 +434,7 @@ Drives projects. Influences team decisions. Handles complex problems.
 **Level-Aware Feedback:**
 - Reference level expectations
 - "For a Senior Engineer, expected to..."
-- "Great for Junior level"
+- "Great for early career level"
 - "Ready for next level because..."
 
 ## Common Patterns
@@ -476,7 +476,7 @@ By Domain:
 - Self-explanatory
 - No reference needed
 - Clear expectations
-- Examples: Junior, Senior, Staff
+- Examples: Early Career, Senior, Staff
 
 **Hybrid:**
 - Best of both
@@ -577,7 +577,7 @@ By Domain:
 ### Tech Startup (15 people)
 
 ```
-JR - Junior Engineer (0-2 years)
+JR - Early Career Engineer (0-2 years)
 EN - Engineer (2-5 years)  
 SR - Senior Engineer (5+ years)
 ```
@@ -601,7 +601,7 @@ Standard levels, room for growth, clear progression.
 
 ```
 IC1 - Entry Level
-IC2 - Junior
+IC2 - Early Career
 IC3 - Intermediate
 IC4 - Senior
 IC5 - Staff
@@ -631,7 +631,7 @@ A: Yes. Edit anytime. Be careful with codes (affects display) but titles/descrip
 A: Ideally yes, for consistency. But if company levels don't fit your team, adapt them. Document your mapping.
 
 **Q: What if we don't have formal levels?**
-A: You can still use them in ManagerDash for your own tracking. Keep it simple: Junior/Mid/Senior.
+A: You can still use them in ManagerDash for your own tracking. Keep it simple: Early Career/Mid/Senior.
 
 **Q: Do I have to assign levels to everyone?**
 A: No, they're optional. But they add valuable context for assessments and goals.
@@ -644,5 +644,3 @@ A: Yes, but consider if it adds value or complexity. Usually better to have unif
 
 **Q: What if someone doesn't fit any level?**
 A: This suggests you need to refine your level definitions or add a level. Use feedback and discussions to figure out why they don't fit.
-
-

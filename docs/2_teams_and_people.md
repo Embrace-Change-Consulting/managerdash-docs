@@ -182,7 +182,7 @@ Seniority levels help categorize experience and expectations.
 
 Go to Settings → Manage Teams to configure:
 - **Code**: Short identifier (e.g., "JR", "SR")
-- **Title**: Full title (e.g., "Junior Engineer")
+- **Title**: Full title (e.g., "Early Career Engineer")
 - **Description**: Role expectations
 
 ### Assigning Levels

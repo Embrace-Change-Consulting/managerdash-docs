@@ -193,7 +193,7 @@ Quarter End:
 
 Milestones:
 1. [ ] Lead design review
-2. [ ] Mentor junior engineer  
+2. [ ] Mentor early career engineer  
 3. [ ] Present tech talk
 4. [ ] Document decisions
 5. [ ] Ship feature successfully
