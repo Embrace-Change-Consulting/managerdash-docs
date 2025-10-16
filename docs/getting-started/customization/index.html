@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-getting-started/customization" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">Seniority Levels Setup | ManagerDash Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/getting-started/customization"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Seniority Levels Setup | ManagerDash Docs"><meta data-rh="true" name="description" content="Customize career levels and descriptions for your organization."><meta data-rh="true" property="og:description" content="Customize career levels and descriptions for your organization."><link data-rh="true" rel="icon" href="/managerdash-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/getting-started/customization"><link data-rh="true" rel="alternate" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/getting-started/customization" hreflang="en"><link data-rh="true" rel="alternate" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/getting-started/customization" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Getting Started","item":"https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/category/getting-started"},{"@type":"ListItem","position":2,"name":"Seniority Levels Setup","item":"https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/getting-started/customization"}]}</script><link rel="alternate" type="application/rss+xml" href="/managerdash-docs/blog/rss.xml" title="ManagerDash Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/managerdash-docs/blog/atom.xml" title="ManagerDash Docs Atom Feed"><link rel="stylesheet" href="/managerdash-docs/assets/css/styles.912e5f14.css">
+<script src="/managerdash-docs/assets/js/runtime~main.ff18cd51.js" defer="defer"></script>
+<script src="/managerdash-docs/assets/js/main.e327a57d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/managerdash-docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/managerdash-docs/"><div class="navbar__logo"><img src="/managerdash-docs/img/logo.svg" alt="ManagerDash Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/managerdash-docs/img/logo.svg" alt="ManagerDash Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ManagerDash</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/managerdash-docs/docs/category/getting-started">Docs</a><a class="navbar__item navbar__link" href="/managerdash-docs/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/managerdash-docs/docs/category/getting-started"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a><button aria-label="Collapse sidebar category &#x27;Getting Started&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/managerdash-docs/docs/getting-started/getting-started"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/managerdash-docs/docs/getting-started/github-token"><span title="GitHub Token Setup" class="linkLabel_WmDU">GitHub Token Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/managerdash-docs/docs/getting-started/customization"><span title="Seniority Levels Setup" class="linkLabel_WmDU">Seniority Levels Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/managerdash-docs/docs/getting-started/skills-customization"><span title="Skills Assessment Setup" class="linkLabel_WmDU">Skills Assessment Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/teams_and_people"><span title="Configuring your team" class="linkLabel_WmDU">Configuring your team</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/goals-and-milestones"><span title="Goals and Milestones" class="linkLabel_WmDU">Goals and Milestones</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/assessing-skills"><span title="Skills Assessment" class="linkLabel_WmDU">Skills Assessment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/feedback"><span title="Feedback Management" class="linkLabel_WmDU">Feedback Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/pr_review"><span title="Pull Request Review" class="linkLabel_WmDU">Pull Request Review</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/reports"><span title="Reports" class="linkLabel_WmDU">Reports</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/tips_best_practices"><span title="Tips and Best Practices" class="linkLabel_WmDU">Tips and Best Practices</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/managerdash-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/managerdash-docs/docs/category/getting-started"><span>Getting Started</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Seniority Levels Setup</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Seniority Levels Setup</h1></header><p>This guide provides detailed instructions for configuring and managing seniority levels in ManagerDash.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-seniority-levels">What Are Seniority Levels?<a href="#what-are-seniority-levels" class="hash-link" aria-label="Direct link to What Are Seniority Levels?" title="Direct link to What Are Seniority Levels?" translate="no">​</a></h2>
+<p>Seniority levels help you classify team members by experience, responsibility, and expectations. They provide context for:</p>
+<ul>
+<li>Skills assessments (expectations vary by level)</li>
+<li>Goal setting (appropriate complexity)</li>
+<li>Performance evaluations (level-appropriate standards)</li>
+<li>Career progression tracking</li>
+<li>Team composition analysis</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Early Career Engineer → Senior Engineer → Staff Engineer</li>
+<li>IC1 → IC2 → IC3 → IC4</li>
+<li>Developer → Senior Developer → Lead Developer → Principal</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-use-seniority-levels">Why Use Seniority Levels?<a href="#why-use-seniority-levels" class="hash-link" aria-label="Direct link to Why Use Seniority Levels?" title="Direct link to Why Use Seniority Levels?" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benefits">Benefits<a href="#benefits" class="hash-link" aria-label="Direct link to Benefits" title="Direct link to Benefits" translate="no">​</a></h3>
+<p><strong>Contextual Assessment:</strong></p>
+<ul>
+<li>Skills ratings make more sense with level context</li>
+<li>&quot;On track&quot; for Early Career ≠ &quot;On track&quot; for Senior</li>
+<li>Compare people at same level fairly</li>
+</ul>
+<p><strong>Career Development:</strong></p>
+<ul>
+<li>Track progression between levels</li>
+<li>Set level-appropriate goals</li>
+<li>Plan promotions with clear criteria</li>
+<li>Document growth over time</li>
+</ul>
+<p><strong>Team Analysis:</strong></p>
+<ul>
+<li>Understand team composition</li>
+<li>Identify level imbalances</li>
+<li>Plan hiring needs</li>
+<li>Balance experience distribution</li>
+</ul>
+<p><strong>Reporting:</strong></p>
+<ul>
+<li>Include level in reports</li>
+<li>Filter/group by seniority</li>
+<li>Track promotion timelines</li>
+<li>Show career progression</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="accessing-seniority-level-configuration">Accessing Seniority Level Configuration<a href="#accessing-seniority-level-configuration" class="hash-link" aria-label="Direct link to Accessing Seniority Level Configuration" title="Direct link to Accessing Seniority Level Configuration" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-open-settings">Step 1: Open Settings<a href="#step-1-open-settings" class="hash-link" aria-label="Direct link to Step 1: Open Settings" title="Direct link to Step 1: Open Settings" translate="no">​</a></h3>
+<ol>
+<li>Launch ManagerDash</li>
+<li>Look at the bottom of the left sidebar</li>
+<li>Click the <strong>Settings</strong> (gear icon) button</li>
+<li>Click <strong>Manage Teams</strong> from the dropdown menu</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-navigate-to-seniority-levels">Step 2: Navigate to Seniority Levels<a href="#step-2-navigate-to-seniority-levels" class="hash-link" aria-label="Direct link to Step 2: Navigate to Seniority Levels" title="Direct link to Step 2: Navigate to Seniority Levels" translate="no">​</a></h3>
+<ol>
+<li>The Manage Teams modal opens</li>
+<li>Look for tabs or sections at the top</li>
+<li>Find and click <strong>Seniority Levels</strong> tab/section</li>
+<li>You&#x27;ll see a list of existing levels (if any)</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="creating-seniority-levels">Creating Seniority Levels<a href="#creating-seniority-levels" class="hash-link" aria-label="Direct link to Creating Seniority Levels" title="Direct link to Creating Seniority Levels" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="basic-setup">Basic Setup<a href="#basic-setup" class="hash-link" aria-label="Direct link to Basic Setup" title="Direct link to Basic Setup" translate="no">​</a></h3>
+<p><strong>Step 1: Click Add Button</strong></p>
+<ul>
+<li>Look for <strong>&quot;+ Add Seniority Level&quot;</strong> or similar button</li>
+<li>Click it to open the creation form</li>
+</ul>
+<p><strong>Step 2: Fill in Required Fields</strong></p>
+<p><strong>Code</strong> (required):</p>
+<ul>
+<li>Short identifier (2-4 characters)</li>
+<li>Examples: &quot;JR&quot;, &quot;SR&quot;, &quot;STF&quot;, &quot;IC3&quot;</li>
+<li>Used in compact views</li>
+<li>Keep it simple and clear</li>
+</ul>
+<p><strong>Title</strong> (required):</p>
+<ul>
+<li>Full level name</li>
+<li>Examples: &quot;Early Career Engineer&quot;, &quot;Senior Engineer&quot;</li>
+<li>What you&#x27;ll see most often</li>
+<li>Be specific and descriptive</li>
+</ul>
+<p><strong>Description</strong> (optional but recommended):</p>
+<ul>
+<li>Detailed explanation of level</li>
+<li>Responsibilities and expectations</li>
+<li>Skills typically demonstrated</li>
+<li>Experience range</li>
+<li>Helps with consistent leveling</li>
+</ul>
+<p><strong>Step 3: Save</strong></p>
+<ul>
+<li>Click <strong>Save</strong> or <strong>Add</strong> button</li>
+<li>Level appears in the list</li>
+<li>Now available when adding/editing people</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-configurations">Example Configurations<a href="#example-configurations" class="hash-link" aria-label="Direct link to Example Configurations" title="Direct link to Example Configurations" translate="no">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="software-engineering-ladder">Software Engineering Ladder<a href="#software-engineering-ladder" class="hash-link" aria-label="Direct link to Software Engineering Ladder" title="Direct link to Software Engineering Ladder" translate="no">​</a></h4>
+<p><strong>Level 1: Early Career Engineer</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: JR</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Early Career Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Early career engineer (0-2 years). Learning fundamentals, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">requires regular guidance. Focuses on well-defined tasks. Building </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">technical foundation and professional skills.</span><br></span></code></pre></div></div>
+<p><strong>Level 2: Engineer</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: ENG</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Mid-level engineer (2-5 years). Works independently on </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">defined projects. Solid technical fundamentals. Contributes to code </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">reviews and team discussions. Occasional mentoring of early career engineers.</span><br></span></code></pre></div></div>
+<p><strong>Level 3: Senior Engineer</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: SR</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Senior Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Experienced engineer (5-8 years). Leads medium to large </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">projects. Strong technical decision-making. Mentors others regularly. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Influences team practices and standards. Handles ambiguous problems.</span><br></span></code></pre></div></div>
+<p><strong>Level 4: Staff Engineer</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: STF</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Staff Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Expert engineer (8+ years). Drives technical strategy across </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">multiple teams. Solves complex, ambiguous problems. Significant influence </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">on architecture and technical direction. Coaches and develops other </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">engineers.</span><br></span></code></pre></div></div>
+<p><strong>Level 5: Principal Engineer</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: PRI</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Principal Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Senior technical leader (12+ years). Sets technical vision </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">for organization. Solves company-wide technical challenges. Develops other </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">senior engineers. Industry expert and thought leader.</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ic-track-framework">IC Track Framework<a href="#ic-track-framework" class="hash-link" aria-label="Direct link to IC Track Framework" title="Direct link to IC Track Framework" translate="no">​</a></h4>
+<p><strong>Level 1:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: IC1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Individual Contributor Level 1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Entry level. Requires close guidance. Executes on clearly </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">defined tasks. Learning core skills and company practices.</span><br></span></code></pre></div></div>
+<p><strong>Level 2:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: IC2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Individual Contributor Level 2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Developing proficiency. Works independently on routine tasks. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Requires guidance on complex problems. Beginning to contribute ideas.</span><br></span></code></pre></div></div>
+<p><strong>Level 3:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: IC3</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Individual Contributor Level 3</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Fully proficient. Independent on most tasks. Occasional </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">guidance on novel problems. Mentors IC1/IC2. Strong technical contributor.</span><br></span></code></pre></div></div>
+<p><strong>Level 4:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: IC4</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Individual Contributor Level 4</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Expert level. Leads projects and influences team direction. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Handles ambiguity well. Develops others. Key technical decision-maker.</span><br></span></code></pre></div></div>
+<p><strong>Level 5:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: IC5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Individual Contributor Level 5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Domain expert. Multi-team impact. Strategic technical </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">influence. Develops senior ICs. Sets standards and direction.</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="simplified-three-tier">Simplified Three-Tier<a href="#simplified-three-tier" class="hash-link" aria-label="Direct link to Simplified Three-Tier" title="Direct link to Simplified Three-Tier" translate="no">​</a></h4>
+<p><strong>Early Career:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: JUN</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Early Career Developer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: 0-3 years experience. Learning phase. Requires regular </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">guidance. Focuses on skill development and task execution.</span><br></span></code></pre></div></div>
+<p><strong>Mid:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: MID</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Mid-Level Developer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: 3-7 years experience. Independent contributor. Solid skills. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Occasional mentoring. Reliable execution on defined projects.</span><br></span></code></pre></div></div>
+<p><strong>Senior:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Code: SEN</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Title: Senior Developer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: 7+ years experience. Technical leader. Mentors others. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Drives projects. Influences team decisions. Handles complex problems.</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="editing-seniority-levels">Editing Seniority Levels<a href="#editing-seniority-levels" class="hash-link" aria-label="Direct link to Editing Seniority Levels" title="Direct link to Editing Seniority Levels" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-to-edit">When to Edit<a href="#when-to-edit" class="hash-link" aria-label="Direct link to When to Edit" title="Direct link to When to Edit" translate="no">​</a></h3>
+<ul>
+<li>Clarifying descriptions</li>
+<li>Updating expectations</li>
+<li>Fixing typos</li>
+<li>Adjusting codes for consistency</li>
+<li>Refining level criteria</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-edit">How to Edit<a href="#how-to-edit" class="hash-link" aria-label="Direct link to How to Edit" title="Direct link to How to Edit" translate="no">​</a></h3>
+<ol>
+<li>Open Settings → Manage Teams → Seniority Levels</li>
+<li>Find the level you want to edit</li>
+<li>Click <strong>Edit</strong> icon/button next to it</li>
+<li>Update the fields:<!-- -->
+<ul>
+<li>Code (be careful - affects existing aliases)</li>
+<li>Title (safe to change)</li>
+<li>Description (safe to change)</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong></li>
+<li>Changes apply immediately</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="important-considerations">Important Considerations<a href="#important-considerations" class="hash-link" aria-label="Direct link to Important Considerations" title="Direct link to Important Considerations" translate="no">​</a></h3>
+<p><strong>Changing Codes:</strong></p>
+<ul>
+<li>Existing people keep their level assignment</li>
+<li>But the code they see updates</li>
+<li>Consider impact on exports/reports</li>
+<li>Update documentation if you have it</li>
+</ul>
+<p><strong>Changing Titles:</strong></p>
+<ul>
+<li>Safe to do anytime</li>
+<li>Updates everywhere immediately</li>
+<li>More descriptive titles are better</li>
+</ul>
+<p><strong>Updating Descriptions:</strong></p>
+<ul>
+<li>No impact on functionality</li>
+<li>Makes leveling more consistent</li>
+<li>Good to refine over time</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="deleting-seniority-levels">Deleting Seniority Levels<a href="#deleting-seniority-levels" class="hash-link" aria-label="Direct link to Deleting Seniority Levels" title="Direct link to Deleting Seniority Levels" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-to-delete">When to Delete<a href="#when-to-delete" class="hash-link" aria-label="Direct link to When to Delete" title="Direct link to When to Delete" translate="no">​</a></h3>
+<ul>
+<li>Level no longer used in your org</li>
+<li>Consolidating similar levels</li>
+<li>Simplifying level structure</li>
+<li>Correcting mistakes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-delete">How to Delete<a href="#how-to-delete" class="hash-link" aria-label="Direct link to How to Delete" title="Direct link to How to Delete" translate="no">​</a></h3>
+<ol>
+<li>Open Settings → Manage Teams → Seniority Levels</li>
+<li>Find the level to delete</li>
+<li>Click <strong>Delete</strong> icon/button</li>
+<li>Confirm deletion if prompted</li>
+<li>Level is removed</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-to-existing-assignments">What Happens to Existing Assignments?<a href="#what-happens-to-existing-assignments" class="hash-link" aria-label="Direct link to What Happens to Existing Assignments?" title="Direct link to What Happens to Existing Assignments?" translate="no">​</a></h3>
+<p><strong>People currently at this level:</strong></p>
+<ul>
+<li>They keep their data</li>
+<li>Their seniority level field becomes unset/empty</li>
+<li>You can reassign them to different level</li>
+<li>No other data is affected</li>
+</ul>
+<p><strong>Best Practice:</strong></p>
+<ol>
+<li>Before deleting, note who has this level</li>
+<li>Delete the level</li>
+<li>Edit each affected person</li>
+<li>Assign them to appropriate new level</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="assigning-levels-to-people">Assigning Levels to People<a href="#assigning-levels-to-people" class="hash-link" aria-label="Direct link to Assigning Levels to People" title="Direct link to Assigning Levels to People" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-adding-a-new-person">When Adding a New Person<a href="#when-adding-a-new-person" class="hash-link" aria-label="Direct link to When Adding a New Person" title="Direct link to When Adding a New Person" translate="no">​</a></h3>
+<ol>
+<li>Click <strong>&quot;+ Add Alias&quot;</strong> in sidebar</li>
+<li>Fill in Name, GitHub, etc.</li>
+<li>Find <strong>Seniority Level</strong> dropdown</li>
+<li>Select appropriate level (or leave blank)</li>
+<li>Save</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-editing-existing-person">When Editing Existing Person<a href="#when-editing-existing-person" class="hash-link" aria-label="Direct link to When Editing Existing Person" title="Direct link to When Editing Existing Person" translate="no">​</a></h3>
+<ol>
+<li>Find person in sidebar</li>
+<li>Click three-dot menu (⋮)</li>
+<li>Click <strong>Edit</strong></li>
+<li>Find <strong>Seniority Level</strong> dropdown</li>
+<li>Change selection</li>
+<li>Save</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="level-assignment-best-practices">Level Assignment Best Practices<a href="#level-assignment-best-practices" class="hash-link" aria-label="Direct link to Level Assignment Best Practices" title="Direct link to Level Assignment Best Practices" translate="no">​</a></h3>
+<p><strong>Be Consistent:</strong></p>
+<ul>
+<li>Use the same criteria for everyone</li>
+<li>Document your decision-making</li>
+<li>Review assignments periodically</li>
+<li>Get second opinions when uncertain</li>
+</ul>
+<p><strong>Consider Multiple Factors:</strong></p>
+<ul>
+<li>Years of experience (but not only this)</li>
+<li>Demonstrated skills and impact</li>
+<li>Scope of responsibility</li>
+<li>Autonomy level</li>
+<li>Mentoring and leadership</li>
+</ul>
+<p><strong>Update on Promotions:</strong></p>
+<ul>
+<li>Change level when promoting</li>
+<li>Document in goals or feedback</li>
+<li>Update immediately after decision</li>
+<li>Celebrate the promotion!</li>
+</ul>
+<p><strong>When Uncertain:</strong></p>
+<ul>
+<li>Leave blank initially</li>
+<li>Assess during first month</li>
+<li>Discuss with team/peers</li>
+<li>Document reasoning</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="initial-setup">Initial Setup<a href="#initial-setup" class="hash-link" aria-label="Direct link to Initial Setup" title="Direct link to Initial Setup" translate="no">​</a></h3>
+<p><strong>Start Simple:</strong></p>
+<ul>
+<li>Begin with 3-4 levels</li>
+<li>Add more only if needed</li>
+<li>Easier to add than remove</li>
+<li>Can always expand later</li>
+</ul>
+<p><strong>Document Criteria:</strong></p>
+<ul>
+<li>What does each level mean?</li>
+<li>What are expectations?</li>
+<li>How do you decide?</li>
+<li>Keep documentation external</li>
+</ul>
+<p><strong>Be Consistent with Org:</strong></p>
+<ul>
+<li>Match company level names if possible</li>
+<li>Align with HR systems</li>
+<li>Use familiar terminology</li>
+<li>Makes reporting easier</li>
+</ul>
+<p><strong>Get Input:</strong></p>
+<ul>
+<li>Discuss with peer managers</li>
+<li>Review with your manager</li>
+<li>Consider team feedback</li>
+<li>Align across organization</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ongoing-management">Ongoing Management<a href="#ongoing-management" class="hash-link" aria-label="Direct link to Ongoing Management" title="Direct link to Ongoing Management" translate="no">​</a></h3>
+<p><strong>Regular Reviews:</strong></p>
+<ul>
+<li>Quarterly: Review assignments</li>
+<li>Annually: Review level definitions</li>
+<li>Update as org evolves</li>
+<li>Refine descriptions</li>
+</ul>
+<p><strong>Calibration Sessions:</strong></p>
+<ul>
+<li>Meet with other managers</li>
+<li>Discuss level assignments</li>
+<li>Ensure consistency</li>
+<li>Document standards</li>
+</ul>
+<p><strong>Promotion Tracking:</strong></p>
+<ul>
+<li>Update levels promptly</li>
+<li>Note promotion dates</li>
+<li>Track time-in-level</li>
+<li>Support career planning</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Keep level criteria written down</li>
+<li>Share with team (appropriately)</li>
+<li>Use in goal-setting</li>
+<li>Reference in reviews</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-with-other-features">Integration with Other Features<a href="#integration-with-other-features" class="hash-link" aria-label="Direct link to Integration with Other Features" title="Direct link to Integration with Other Features" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="skills-assessment">Skills Assessment<a href="#skills-assessment" class="hash-link" aria-label="Direct link to Skills Assessment" title="Direct link to Skills Assessment" translate="no">​</a></h3>
+<p><strong>Level Context for Ratings:</strong></p>
+<ul>
+<li>&quot;On track&quot; means different things at different levels</li>
+<li>Early career at &quot;On track&quot; for basics</li>
+<li>Senior at &quot;On track&quot; for advanced skills</li>
+<li>Set expectations accordingly</li>
+</ul>
+<p><strong>Using Levels:</strong></p>
+<ul>
+<li>Note level in assessment notes</li>
+<li>Reference in rating decisions</li>
+<li>Compare within same level</li>
+<li>Track growth toward next level</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="goals">Goals<a href="#goals" class="hash-link" aria-label="Direct link to Goals" title="Direct link to Goals" translate="no">​</a></h3>
+<p><strong>Level-Appropriate Goals:</strong></p>
+<ul>
+<li>Early Career: Learning, execution, foundation</li>
+<li>Mid: Independence, consistency, breadth</li>
+<li>Senior: Leadership, mentoring, strategy</li>
+</ul>
+<p><strong>Promotion Goals:</strong></p>
+<ul>
+<li>&quot;Demonstrate Senior level skills&quot;</li>
+<li>Link to level descriptions</li>
+<li>Clear criteria from descriptions</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reports">Reports<a href="#reports" class="hash-link" aria-label="Direct link to Reports" title="Direct link to Reports" translate="no">​</a></h3>
+<p><strong>In Reports:</strong></p>
+<ul>
+<li>Level appears with person&#x27;s name</li>
+<li>Provides context for reader</li>
+<li>Helps explain ratings</li>
+<li>Shows progression</li>
+</ul>
+<p><strong>Filtering:</strong></p>
+<ul>
+<li>While ManagerDash doesn&#x27;t filter by level yet</li>
+<li>You can note it in descriptions</li>
+<li>Group manually when needed</li>
+<li>Request feature if valuable</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="feedback">Feedback<a href="#feedback" class="hash-link" aria-label="Direct link to Feedback" title="Direct link to Feedback" translate="no">​</a></h3>
+<p><strong>Level-Aware Feedback:</strong></p>
+<ul>
+<li>Reference level expectations</li>
+<li>&quot;For a Senior Engineer, expected to...&quot;</li>
+<li>&quot;Great for early career level&quot;</li>
+<li>&quot;Ready for next level because...&quot;</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-patterns">Common Patterns<a href="#common-patterns" class="hash-link" aria-label="Direct link to Common Patterns" title="Direct link to Common Patterns" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="career-ladders">Career Ladders<a href="#career-ladders" class="hash-link" aria-label="Direct link to Career Ladders" title="Direct link to Career Ladders" translate="no">​</a></h3>
+<p><strong>Dual Track:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Individual Contributor Track:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- IC1 → IC2 → IC3 → IC4 → IC5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Management Track:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- M1 → M2 → M3 → M4</span><br></span></code></pre></div></div>
+<p><strong>Single Track:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Progressive Levels:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Associate → Engineer → Senior → Staff → Principal</span><br></span></code></pre></div></div>
+<p><strong>Specialized Tracks:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">By Domain:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Frontend: FE1 → FE2 → FE3</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Backend: BE1 → BE2 → BE3</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Full Stack: FS1 → FS2 → FS3</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="naming-conventions">Naming Conventions<a href="#naming-conventions" class="hash-link" aria-label="Direct link to Naming Conventions" title="Direct link to Naming Conventions" translate="no">​</a></h3>
+<p><strong>Numeric:</strong></p>
+<ul>
+<li>Clear progression</li>
+<li>Easy to understand</li>
+<li>No ambiguity</li>
+<li>Examples: L1, L2, L3 or IC1, IC2, IC3</li>
+</ul>
+<p><strong>Descriptive:</strong></p>
+<ul>
+<li>Self-explanatory</li>
+<li>No reference needed</li>
+<li>Clear expectations</li>
+<li>Examples: Early Career, Senior, Staff</li>
+</ul>
+<p><strong>Hybrid:</strong></p>
+<ul>
+<li>Best of both</li>
+<li>Clear and numbered</li>
+<li>Examples: &quot;L3 - Senior Engineer&quot;</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cant-find-seniority-levels-section">Can&#x27;t Find Seniority Levels Section<a href="#cant-find-seniority-levels-section" class="hash-link" aria-label="Direct link to Can&#x27;t Find Seniority Levels Section" title="Direct link to Can&#x27;t Find Seniority Levels Section" translate="no">​</a></h3>
+<p><strong>Problem:</strong> Don&#x27;t see where to manage levels</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Check Settings → Manage Teams</li>
+<li>Look for tabs at top of modal</li>
+<li>May be labeled &quot;Seniority&quot; or &quot;Levels&quot;</li>
+<li>If missing, feature may not be available</li>
+<li>Check app version/updates</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes-not-appearing">Changes Not Appearing<a href="#changes-not-appearing" class="hash-link" aria-label="Direct link to Changes Not Appearing" title="Direct link to Changes Not Appearing" translate="no">​</a></h3>
+<p><strong>Problem:</strong> Updated level but doesn&#x27;t show</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Close and reopen Manage Teams modal</li>
+<li>Refresh the application</li>
+<li>Check if save actually succeeded</li>
+<li>Look for error messages</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="persons-level-not-updating">Person&#x27;s Level Not Updating<a href="#persons-level-not-updating" class="hash-link" aria-label="Direct link to Person&#x27;s Level Not Updating" title="Direct link to Person&#x27;s Level Not Updating" translate="no">​</a></h3>
+<p><strong>Problem:</strong> Changed person&#x27;s level but still shows old</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Verify you clicked Save after editing</li>
+<li>Refresh the page</li>
+<li>Check if you edited correct person</li>
+<li>Try editing again</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="level-dropdown-empty">Level Dropdown Empty<a href="#level-dropdown-empty" class="hash-link" aria-label="Direct link to Level Dropdown Empty" title="Direct link to Level Dropdown Empty" translate="no">​</a></h3>
+<p><strong>Problem:</strong> No levels available when adding person</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>First create seniority levels in Manage Teams</li>
+<li>Then add people with levels</li>
+<li>Can&#x27;t assign levels that don&#x27;t exist yet</li>
+<li>Create at least one level first</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="migration-strategies">Migration Strategies<a href="#migration-strategies" class="hash-link" aria-label="Direct link to Migration Strategies" title="Direct link to Migration Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="from-no-levels-to-levels">From No Levels to Levels<a href="#from-no-levels-to-levels" class="hash-link" aria-label="Direct link to From No Levels to Levels" title="Direct link to From No Levels to Levels" translate="no">​</a></h3>
+<p><strong>Phase 1: Define Levels</strong></p>
+<ol>
+<li>Week 1: Define 3-4 core levels</li>
+<li>Document criteria</li>
+<li>Get manager alignment</li>
+<li>Create in ManagerDash</li>
+</ol>
+<p><strong>Phase 2: Assign Levels</strong></p>
+<ol>
+<li>Week 2: Assign obvious cases</li>
+<li>Week 3: Discuss uncertain cases</li>
+<li>Week 4: Complete assignments</li>
+<li>Review with team</li>
+</ol>
+<p><strong>Phase 3: Use in Workflows</strong></p>
+<ol>
+<li>Month 2: Reference in 1-on-1s</li>
+<li>Month 2: Use in goal-setting</li>
+<li>Month 3: Include in reviews</li>
+<li>Ongoing: Track promotions</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="from-old-system-to-new">From Old System to New<a href="#from-old-system-to-new" class="hash-link" aria-label="Direct link to From Old System to New" title="Direct link to From Old System to New" translate="no">​</a></h3>
+<p><strong>If changing level structure:</strong></p>
+<ol>
+<li>
+<p><strong>Document Current State:</strong></p>
+<ul>
+<li>Export reports with current levels</li>
+<li>Note each person&#x27;s current level</li>
+<li>Save for reference</li>
+</ul>
+</li>
+<li>
+<p><strong>Create New Levels:</strong></p>
+<ul>
+<li>Add new level definitions</li>
+<li>Include mapping from old to new</li>
+<li>Document differences</li>
+</ul>
+</li>
+<li>
+<p><strong>Migrate People:</strong></p>
+<ul>
+<li>Reassign each person to new level</li>
+<li>Use your documented mapping</li>
+<li>Verify each assignment</li>
+</ul>
+</li>
+<li>
+<p><strong>Clean Up:</strong></p>
+<ul>
+<li>Delete old levels (after all migrated)</li>
+<li>Update documentation</li>
+<li>Communicate changes to team</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="examples-from-real-organizations">Examples from Real Organizations<a href="#examples-from-real-organizations" class="hash-link" aria-label="Direct link to Examples from Real Organizations" title="Direct link to Examples from Real Organizations" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech-startup-15-people">Tech Startup (15 people)<a href="#tech-startup-15-people" class="hash-link" aria-label="Direct link to Tech Startup (15 people)" title="Direct link to Tech Startup (15 people)" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">JR - Early Career Engineer (0-2 years)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">EN - Engineer (2-5 years)  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">SR - Senior Engineer (5+ years)</span><br></span></code></pre></div></div>
+<p>Simple, clear, works for small team.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mid-size-company-50-engineers">Mid-Size Company (50+ engineers)<a href="#mid-size-company-50-engineers" class="hash-link" aria-label="Direct link to Mid-Size Company (50+ engineers)" title="Direct link to Mid-Size Company (50+ engineers)" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">E1 - Associate Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">E2 - Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">E3 - Senior Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">E4 - Staff Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">E5 - Senior Staff Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">E6 - Principal Engineer</span><br></span></code></pre></div></div>
+<p>Standard levels, room for growth, clear progression.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="large-enterprise-100-engineers">Large Enterprise (100+ engineers)<a href="#large-enterprise-100-engineers" class="hash-link" aria-label="Direct link to Large Enterprise (100+ engineers)" title="Direct link to Large Enterprise (100+ engineers)" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">IC1 - Entry Level</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC2 - Early Career</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC3 - Intermediate</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC4 - Senior</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC5 - Staff</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC6 - Senior Staff</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC7 - Principal</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC8 - Distinguished Engineer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">IC9 - Fellow</span><br></span></code></pre></div></div>
+<p>Detailed ladder, many levels, rare to reach top.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="faq">FAQ<a href="#faq" class="hash-link" aria-label="Direct link to FAQ" title="Direct link to FAQ" translate="no">​</a></h2>
+<p><strong>Q: How many seniority levels should I have?</strong>
+A: 3-5 levels work for most teams. More than 7 gets complicated. Start simple.</p>
+<p><strong>Q: Should I use numbers or names?</strong>
+A: Either works. Numbers are clearer for progression. Names are more descriptive. Consider hybrid: &quot;L3 - Senior Engineer&quot;.</p>
+<p><strong>Q: What if someone is between levels?</strong>
+A: Choose the level they&#x27;re currently at, not aspiring to. Use goals to track path to next level.</p>
+<p><strong>Q: Can I change levels later?</strong>
+A: Yes. Edit anytime. Be careful with codes (affects display) but titles/descriptions are safe to change.</p>
+<p><strong>Q: Should levels match our company&#x27;s official levels?</strong>
+A: Ideally yes, for consistency. But if company levels don&#x27;t fit your team, adapt them. Document your mapping.</p>
+<p><strong>Q: What if we don&#x27;t have formal levels?</strong>
+A: You can still use them in ManagerDash for your own tracking. Keep it simple: Early Career/Mid/Senior.</p>
+<p><strong>Q: Do I have to assign levels to everyone?</strong>
+A: No, they&#x27;re optional. But they add valuable context for assessments and goals.</p>
+<p><strong>Q: How do I handle promotions?</strong>
+A: When someone is promoted, edit their profile and update their seniority level. Add a goal or feedback item noting the promotion.</p>
+<p><strong>Q: Can I have different levels for different roles (e.g., Frontend vs Backend)?</strong>
+A: Yes, but consider if it adds value or complexity. Usually better to have unified levels.</p>
+<p><strong>Q: What if someone doesn&#x27;t fit any level?</strong>
+A: This suggests you need to refine your level definitions or add a level. Use feedback and discussions to figure out why they don&#x27;t fit.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/1_getting-started/c_customizing.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/managerdash-docs/docs/getting-started/github-token"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">GitHub Token Setup</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/managerdash-docs/docs/getting-started/skills-customization"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Skills Assessment Setup</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-are-seniority-levels" class="table-of-contents__link toc-highlight">What Are Seniority Levels?</a></li><li><a href="#why-use-seniority-levels" class="table-of-contents__link toc-highlight">Why Use Seniority Levels?</a><ul><li><a href="#benefits" class="table-of-contents__link toc-highlight">Benefits</a></li></ul></li><li><a href="#accessing-seniority-level-configuration" class="table-of-contents__link toc-highlight">Accessing Seniority Level Configuration</a><ul><li><a href="#step-1-open-settings" class="table-of-contents__link toc-highlight">Step 1: Open Settings</a></li><li><a href="#step-2-navigate-to-seniority-levels" class="table-of-contents__link toc-highlight">Step 2: Navigate to Seniority Levels</a></li></ul></li><li><a href="#creating-seniority-levels" class="table-of-contents__link toc-highlight">Creating Seniority Levels</a><ul><li><a href="#basic-setup" class="table-of-contents__link toc-highlight">Basic Setup</a></li><li><a href="#example-configurations" class="table-of-contents__link toc-highlight">Example Configurations</a></li></ul></li><li><a href="#editing-seniority-levels" class="table-of-contents__link toc-highlight">Editing Seniority Levels</a><ul><li><a href="#when-to-edit" class="table-of-contents__link toc-highlight">When to Edit</a></li><li><a href="#how-to-edit" class="table-of-contents__link toc-highlight">How to Edit</a></li><li><a href="#important-considerations" class="table-of-contents__link toc-highlight">Important Considerations</a></li></ul></li><li><a href="#deleting-seniority-levels" class="table-of-contents__link toc-highlight">Deleting Seniority Levels</a><ul><li><a href="#when-to-delete" class="table-of-contents__link toc-highlight">When to Delete</a></li><li><a href="#how-to-delete" class="table-of-contents__link toc-highlight">How to Delete</a></li><li><a href="#what-happens-to-existing-assignments" class="table-of-contents__link toc-highlight">What Happens to Existing Assignments?</a></li></ul></li><li><a href="#assigning-levels-to-people" class="table-of-contents__link toc-highlight">Assigning Levels to People</a><ul><li><a href="#when-adding-a-new-person" class="table-of-contents__link toc-highlight">When Adding a New Person</a></li><li><a href="#when-editing-existing-person" class="table-of-contents__link toc-highlight">When Editing Existing Person</a></li><li><a href="#level-assignment-best-practices" class="table-of-contents__link toc-highlight">Level Assignment Best Practices</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#initial-setup" class="table-of-contents__link toc-highlight">Initial Setup</a></li><li><a href="#ongoing-management" class="table-of-contents__link toc-highlight">Ongoing Management</a></li></ul></li><li><a href="#integration-with-other-features" class="table-of-contents__link toc-highlight">Integration with Other Features</a><ul><li><a href="#skills-assessment" class="table-of-contents__link toc-highlight">Skills Assessment</a></li><li><a href="#goals" class="table-of-contents__link toc-highlight">Goals</a></li><li><a href="#reports" class="table-of-contents__link toc-highlight">Reports</a></li><li><a href="#feedback" class="table-of-contents__link toc-highlight">Feedback</a></li></ul></li><li><a href="#common-patterns" class="table-of-contents__link toc-highlight">Common Patterns</a><ul><li><a href="#career-ladders" class="table-of-contents__link toc-highlight">Career Ladders</a></li><li><a href="#naming-conventions" class="table-of-contents__link toc-highlight">Naming Conventions</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#cant-find-seniority-levels-section" class="table-of-contents__link toc-highlight">Can&#39;t Find Seniority Levels Section</a></li><li><a href="#changes-not-appearing" class="table-of-contents__link toc-highlight">Changes Not Appearing</a></li><li><a href="#persons-level-not-updating" class="table-of-contents__link toc-highlight">Person&#39;s Level Not Updating</a></li><li><a href="#level-dropdown-empty" class="table-of-contents__link toc-highlight">Level Dropdown Empty</a></li></ul></li><li><a href="#migration-strategies" class="table-of-contents__link toc-highlight">Migration Strategies</a><ul><li><a href="#from-no-levels-to-levels" class="table-of-contents__link toc-highlight">From No Levels to Levels</a></li><li><a href="#from-old-system-to-new" class="table-of-contents__link toc-highlight">From Old System to New</a></li></ul></li><li><a href="#examples-from-real-organizations" class="table-of-contents__link toc-highlight">Examples from Real Organizations</a><ul><li><a href="#tech-startup-15-people" class="table-of-contents__link toc-highlight">Tech Startup (15 people)</a></li><li><a href="#mid-size-company-50-engineers" class="table-of-contents__link toc-highlight">Mid-Size Company (50+ engineers)</a></li><li><a href="#large-enterprise-100-engineers" class="table-of-contents__link toc-highlight">Large Enterprise (100+ engineers)</a></li></ul></li><li><a href="#faq" class="table-of-contents__link toc-highlight">FAQ</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/managerdash-docs/docs/getting-started/getting-started">Getting Started</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/managerdash-docs/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Embrace Change Consulting.</div></div></div></footer></div>
+</body>
+</html>

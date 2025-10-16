@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tips_best_practices" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">Tips and Best Practices | ManagerDash Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/tips_best_practices"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Tips and Best Practices | ManagerDash Docs"><meta data-rh="true" name="description" content="This guide provides advanced tips, best practices, and workflows to help you get the most out of ManagerDash."><meta data-rh="true" property="og:description" content="This guide provides advanced tips, best practices, and workflows to help you get the most out of ManagerDash."><link data-rh="true" rel="icon" href="/managerdash-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/tips_best_practices"><link data-rh="true" rel="alternate" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/tips_best_practices" hreflang="en"><link data-rh="true" rel="alternate" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/tips_best_practices" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tips and Best Practices","item":"https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/tips_best_practices"}]}</script><link rel="alternate" type="application/rss+xml" href="/managerdash-docs/blog/rss.xml" title="ManagerDash Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/managerdash-docs/blog/atom.xml" title="ManagerDash Docs Atom Feed"><link rel="stylesheet" href="/managerdash-docs/assets/css/styles.912e5f14.css">
+<script src="/managerdash-docs/assets/js/runtime~main.ff18cd51.js" defer="defer"></script>
+<script src="/managerdash-docs/assets/js/main.e327a57d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/managerdash-docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/managerdash-docs/"><div class="navbar__logo"><img src="/managerdash-docs/img/logo.svg" alt="ManagerDash Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/managerdash-docs/img/logo.svg" alt="ManagerDash Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ManagerDash</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/managerdash-docs/docs/category/getting-started">Docs</a><a class="navbar__item navbar__link" href="/managerdash-docs/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/managerdash-docs/docs/category/getting-started"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a><button aria-label="Expand sidebar category &#x27;Getting Started&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/teams_and_people"><span title="Configuring your team" class="linkLabel_WmDU">Configuring your team</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/goals-and-milestones"><span title="Goals and Milestones" class="linkLabel_WmDU">Goals and Milestones</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/assessing-skills"><span title="Skills Assessment" class="linkLabel_WmDU">Skills Assessment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/feedback"><span title="Feedback Management" class="linkLabel_WmDU">Feedback Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/pr_review"><span title="Pull Request Review" class="linkLabel_WmDU">Pull Request Review</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/reports"><span title="Reports" class="linkLabel_WmDU">Reports</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/managerdash-docs/docs/tips_best_practices"><span title="Tips and Best Practices" class="linkLabel_WmDU">Tips and Best Practices</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/managerdash-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Tips and Best Practices</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Tips and Best Practices</h1></header><p>This guide provides advanced tips, best practices, and workflows to help you get the most out of ManagerDash.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-right">Getting Started Right<a href="#getting-started-right" class="hash-link" aria-label="Direct link to Getting Started Right" title="Direct link to Getting Started Right" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="first-week-setup">First Week Setup<a href="#first-week-setup" class="hash-link" aria-label="Direct link to First Week Setup" title="Direct link to First Week Setup" translate="no">​</a></h3>
+<p><strong>Day 1: Basic Configuration</strong></p>
+<ol>
+<li>Add yourself as an alias (for testing)</li>
+<li>Create 1-2 test teams</li>
+<li>Configure GitHub token in Preferences</li>
+<li>Explore the interface</li>
+<li>Familiarize yourself with navigation</li>
+</ol>
+<p><strong>Day 2-3: Add Your Team</strong></p>
+<ol>
+<li>Add all team members with complete profiles</li>
+<li>Set up teams matching your org structure</li>
+<li>Assign seniority levels</li>
+<li>Verify GitHub usernames</li>
+<li>Use drag-and-drop to organize</li>
+</ol>
+<p><strong>Day 4-5: Initial Data Entry</strong></p>
+<ol>
+<li>Set goals for each person (current quarter)</li>
+<li>Create baseline skills assessments</li>
+<li>Add any recent feedback</li>
+<li>Fetch last month of PRs</li>
+<li>Review everything for accuracy</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="building-good-habits">Building Good Habits<a href="#building-good-habits" class="hash-link" aria-label="Direct link to Building Good Habits" title="Direct link to Building Good Habits" translate="no">​</a></h3>
+<p><strong>Daily Tasks (5 minutes)</strong></p>
+<ul>
+<li>Capture feedback as it happens</li>
+<li>Note significant contributions</li>
+<li>Flag notable PRs</li>
+</ul>
+<p><strong>Weekly Tasks (30 minutes)</strong></p>
+<ul>
+<li>Fetch and rate last week&#x27;s PRs</li>
+<li>Mark draft feedback as delivered</li>
+<li>Update goal statuses</li>
+<li>Review each person&#x27;s progress</li>
+</ul>
+<p><strong>Monthly Tasks (2 hours)</strong></p>
+<ul>
+<li>Update skills assessments</li>
+<li>Generate monthly reports</li>
+<li>Review and archive old goals</li>
+<li>Prepare for 1-on-1s</li>
+<li>Clean up data</li>
+</ul>
+<p><strong>Quarterly Tasks (4 hours)</strong></p>
+<ul>
+<li>Complete comprehensive skills assessments</li>
+<li>Generate quarterly reports</li>
+<li>Review all feedback</li>
+<li>Set next quarter goals</li>
+<li>Export data for performance reviews</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="organization-strategies">Organization Strategies<a href="#organization-strategies" class="hash-link" aria-label="Direct link to Organization Strategies" title="Direct link to Organization Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tagging-systems">Tagging Systems<a href="#tagging-systems" class="hash-link" aria-label="Direct link to Tagging Systems" title="Direct link to Tagging Systems" translate="no">​</a></h3>
+<p><strong>Feedback Tags</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Technical:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- code, architecture, testing, documentation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Soft Skills:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- communication, collaboration, leadership, mentorship</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Projects:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- project-x, migration-2024, launch-mobile</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Time:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- q1-2025, h1-2025, annual-2025</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Type:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- win, learning, blocker, milestone</span><br></span></code></pre></div></div>
+<p><strong>Consistent Application</strong></p>
+<ul>
+<li>Define tags upfront</li>
+<li>Share with other managers</li>
+<li>Use autocomplete (type same tags)</li>
+<li>Review and refine quarterly</li>
+<li>Document your system</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="goal-structure">Goal Structure<a href="#goal-structure" class="hash-link" aria-label="Direct link to Goal Structure" title="Direct link to Goal Structure" translate="no">​</a></h3>
+<p><strong>Clear Goal Hierarchy</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Annual Goal: &quot;Become Tech Lead&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Q1 Goal: &quot;Lead major feature&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  ├─ Milestone: Design document</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  ├─ Milestone: Lead implementation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  └─ Milestone: Mentor 2 engineers</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Q2 Goal: &quot;Improve system design skills&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  ├─ Milestone: Complete course</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  ├─ Milestone: Present to team</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  └─ Milestone: Lead design review</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└─ Q3-Q4 Goals: (planned)</span><br></span></code></pre></div></div>
+<p><strong>SMART Goals Template</strong></p>
+<ul>
+<li><strong>S</strong>pecific: &quot;Ship new dashboard feature&quot;</li>
+<li><strong>M</strong>easurable: &quot;5 milestones defined&quot;</li>
+<li><strong>A</strong>chievable: &quot;With team support&quot;</li>
+<li><strong>R</strong>elevant: &quot;Aligns with product roadmap&quot;</li>
+<li><strong>T</strong>ime-bound: &quot;By end of Q2&quot;</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="skills-assessment-framework">Skills Assessment Framework<a href="#skills-assessment-framework" class="hash-link" aria-label="Direct link to Skills Assessment Framework" title="Direct link to Skills Assessment Framework" translate="no">​</a></h3>
+<p><strong>Rating Calibration Sessions</strong></p>
+<ul>
+<li>Meet with peer managers monthly</li>
+<li>Review 2-3 sample assessments</li>
+<li>Discuss rating interpretations</li>
+<li>Align on standards</li>
+<li>Document consensus</li>
+</ul>
+<p><strong>Development Tracking</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Quarter Start:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Baseline assessment</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Identify 2-3 focus areas</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Link to development goals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Quarter Mid-Point:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Quick check-in</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Note progress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Adjust if needed</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Quarter End:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Full reassessment</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Document growth</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Plan next focus areas</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="time-saving-techniques">Time-Saving Techniques<a href="#time-saving-techniques" class="hash-link" aria-label="Direct link to Time-Saving Techniques" title="Direct link to Time-Saving Techniques" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="keyboard-shortcuts-summary">Keyboard Shortcuts Summary<a href="#keyboard-shortcuts-summary" class="hash-link" aria-label="Direct link to Keyboard Shortcuts Summary" title="Direct link to Keyboard Shortcuts Summary" translate="no">​</a></h3>
+<p><strong>Navigation</strong></p>
+<ul>
+<li><code>Tab</code>: Move between fields</li>
+<li><code>Shift + Tab</code>: Move backward</li>
+<li><code>Esc</code>: Cancel/close</li>
+<li><code>⌘/Ctrl + Enter</code>: Quick save</li>
+</ul>
+<p><strong>Quick Actions</strong></p>
+<ul>
+<li>Click dates to see calendars</li>
+<li>Drag people to reassign teams</li>
+<li>Click PR titles to open GitHub</li>
+<li>Use color picker for visual IDs</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="batch-processing">Batch Processing<a href="#batch-processing" class="hash-link" aria-label="Direct link to Batch Processing" title="Direct link to Batch Processing" translate="no">​</a></h3>
+<p><strong>Weekly PR Review</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">1. Friday afternoon (30 min per person):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Open each person&#x27;s PR Review tab</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Set date range to last 7 days</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Fetch PRs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Rate all at once</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Add quick notes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Move to next person</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. Patterns to watch:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - All &quot;Below&quot; → Immediate conversation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Improving trend → Positive feedback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - High volume → Capacity check</span><br></span></code></pre></div></div>
+<p><strong>Monthly Feedback Processing</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">1. End of month (1 hour):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Review Home Dashboard drafts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Group by person</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Refine wording</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Add tags</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Mark as delivered</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Generate monthly reports</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="template-creation">Template Creation<a href="#template-creation" class="hash-link" aria-label="Direct link to Template Creation" title="Direct link to Template Creation" translate="no">​</a></h3>
+<p><strong>Goal Templates</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token title important punctuation" style="color:#393A34">##</span><span class="token title important"> Technical Leadership Goal</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token bold punctuation" style="color:#393A34">**</span><span class="token bold content">Title</span><span class="token bold punctuation" style="color:#393A34">**</span><span class="token plain">: [Specific achievement]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token bold punctuation" style="color:#393A34">**</span><span class="token bold content">Description</span><span class="token bold punctuation" style="color:#393A34">**</span><span class="token plain">: Develop leadership in [area]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token bold punctuation" style="color:#393A34">**</span><span class="token bold content">Timeline</span><span class="token bold punctuation" style="color:#393A34">**</span><span class="token plain">: [Start] to [End]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Milestones:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">1.</span><span class="token plain"> [ ] Lead design review</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">2.</span><span class="token plain"> [ ] Mentor early career engineer  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">3.</span><span class="token plain"> [ ] Present tech talk</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">4.</span><span class="token plain"> [ ] Document decisions</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">5.</span><span class="token plain"> [ ] Ship feature successfully</span><br></span></code></pre></div></div>
+<p><strong>Feedback Templates</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token title important punctuation" style="color:#393A34">##</span><span class="token title important"> Positive Feedback Template</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[Person] demonstrated excellent [skill] when [specific example]. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">This had [positive impact] and shows growth in [competency area].</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Tags: [skill-area], [project], [quarter]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token title important punctuation" style="color:#393A34">##</span><span class="token title important"> Constructive Feedback Template</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">In [situation], [observed behavior]. For future similar situations, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">consider [specific suggestion]. This will help develop [skill area].</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Tags: [skill-area], [development], [quarter]</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-workflows">Advanced Workflows<a href="#advanced-workflows" class="hash-link" aria-label="Direct link to Advanced Workflows" title="Direct link to Advanced Workflows" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-review-cycle">Performance Review Cycle<a href="#performance-review-cycle" class="hash-link" aria-label="Direct link to Performance Review Cycle" title="Direct link to Performance Review Cycle" translate="no">​</a></h3>
+<p><strong>8 Weeks Before Review</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Export previous review report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Set up folder for this review</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Schedule review meeting</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Block prep time</span><br></span></code></pre></div></div>
+<p><strong>4 Weeks Before Review</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Update all goals and milestones</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Complete skills assessment</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Rate all PRs in period</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Review all feedback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Add any missing data</span><br></span></code></pre></div></div>
+<p><strong>2 Weeks Before Review</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Generate comprehensive report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Export to Markdown</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Review for completeness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Create review document</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Prepare discussion points</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Send preview to team member</span><br></span></code></pre></div></div>
+<p><strong>1 Week Before Review</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Have prep conversation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Gather their self-assessment</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Compare assessments</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Finalize discussion agenda</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Prepare examples</span><br></span></code></pre></div></div>
+<p><strong>During Review</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Use report as guide</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Walk through each section</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Discuss patterns and trends</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Reference specific examples</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Gather their input</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Set next period goals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Document outcomes</span><br></span></code></pre></div></div>
+<p><strong>After Review</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Export final report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Submit to HR system</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Update goals in ManagerDash</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- File documentation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Schedule follow-up</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Begin tracking new period</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="promotion-preparation">Promotion Preparation<a href="#promotion-preparation" class="hash-link" aria-label="Direct link to Promotion Preparation" title="Direct link to Promotion Preparation" translate="no">​</a></h3>
+<p><strong>6 Months Before</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Identify promotion candidates</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Document promotion criteria</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Set stretch goals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Increase feedback frequency</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Look for growth opportunities</span><br></span></code></pre></div></div>
+<p><strong>3 Months Before</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Review progress toward criteria</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Generate comprehensive report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Gather peer feedback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Document impact examples</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Prepare preliminary case</span><br></span></code></pre></div></div>
+<p><strong>1 Month Before</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Finalize promotion packet</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Include ManagerDash reports</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Add supporting evidence</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Review with your manager</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Submit for review</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="team-calibration">Team Calibration<a href="#team-calibration" class="hash-link" aria-label="Direct link to Team Calibration" title="Direct link to Team Calibration" translate="no">​</a></h3>
+<p><strong>Monthly Calibration Meeting</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Agenda:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">1. Review new hires (15 min)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Initial assessments</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Onboarding progress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. Discuss promotions (15 min)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Candidates</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Readiness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. Address concerns (15 min)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Performance issues</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Support needed</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">4. Skill gaps (15 min)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Team-wide needs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Training plans</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-strategies">Integration Strategies<a href="#integration-strategies" class="hash-link" aria-label="Direct link to Integration Strategies" title="Direct link to Integration Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="with-your-calendar">With Your Calendar<a href="#with-your-calendar" class="hash-link" aria-label="Direct link to With Your Calendar" title="Direct link to With Your Calendar" translate="no">​</a></h3>
+<p><strong>Recurring Events</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Weekly:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Friday: PR review (30 min)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Friday: Update goals (15 min)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Bi-weekly:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Monday before 1-on-1s: Generate reports (1 hour)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Monthly:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Last Friday: Monthly reviews (2 hours)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- First Monday: Set monthly focus (30 min)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Quarterly:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Week before quarter end: Complete assessments (4 hours)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- First week of quarter: Set goals (2 hours)</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="with-1-on-1s">With 1-on-1s<a href="#with-1-on-1s" class="hash-link" aria-label="Direct link to With 1-on-1s" title="Direct link to With 1-on-1s" translate="no">​</a></h3>
+<p><strong>Standard 1-on-1 Flow</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Opening (5 min):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Their agenda items</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Quick updates</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Review ManagerDash (15 min):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Pull up their dashboard</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Review recent PRs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Discuss current goals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Check milestone progress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Deliver new feedback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Career Discussion (10 min):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Skills development</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Growth opportunities</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Goal alignment</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Closing (5 min):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Action items</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Next meeting topics</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Add new feedback to drafts</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="with-team-meetings">With Team Meetings<a href="#with-team-meetings" class="hash-link" aria-label="Direct link to With Team Meetings" title="Direct link to With Team Meetings" translate="no">​</a></h3>
+<p><strong>Weekly Team Meetings</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Recognitions (5 min):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Pull from &quot;Team&quot; visibility feedback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Call out recent &quot;Exceeding&quot; PRs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Celebrate milestone completions</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Goals Check (5 min):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Team goal progress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Blockers</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Support needed</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-management">Data Management<a href="#data-management" class="hash-link" aria-label="Direct link to Data Management" title="Direct link to Data Management" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backup-strategy">Backup Strategy<a href="#backup-strategy" class="hash-link" aria-label="Direct link to Backup Strategy" title="Direct link to Backup Strategy" translate="no">​</a></h3>
+<p><strong>Weekly Exports</strong></p>
+<ul>
+<li>Export changed reports</li>
+<li>Save to dated folder</li>
+<li>Keep 3 months local</li>
+<li>Archive older exports</li>
+</ul>
+<p><strong>Monthly Archives</strong></p>
+<ul>
+<li>Export all active reports</li>
+<li>Create monthly snapshot</li>
+<li>Store securely</li>
+<li>Document any issues</li>
+</ul>
+<p><strong>Quarterly Full Backup</strong></p>
+<ul>
+<li>Export all data</li>
+<li>Backup application data</li>
+<li>Verify backup integrity</li>
+<li>Update documentation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-hygiene">Data Hygiene<a href="#data-hygiene" class="hash-link" aria-label="Direct link to Data Hygiene" title="Direct link to Data Hygiene" translate="no">​</a></h3>
+<p><strong>Monthly Cleanup</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Goals:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Archive completed goals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Update stale goals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Remove duplicate goals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Feedback:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Tag untagged feedback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Categorize by type</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Remove test entries</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Skills:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Verify assessment dates</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Check for missing competencies</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Update stale notes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">PRs:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Review unrated PRs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Add missing notes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Verify ratings</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="privacy-management">Privacy Management<a href="#privacy-management" class="hash-link" aria-label="Direct link to Privacy Management" title="Direct link to Privacy Management" translate="no">​</a></h3>
+<p><strong>Sensitive Data Handling</strong></p>
+<ul>
+<li>Use &quot;Private&quot; visibility for sensitive feedback</li>
+<li>Don&#x27;t export sensitive data unnecessarily</li>
+<li>Redact before sharing externally</li>
+<li>Follow company data policies</li>
+<li>Respect individual privacy</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting-patterns">Troubleshooting Patterns<a href="#troubleshooting-patterns" class="hash-link" aria-label="Direct link to Troubleshooting Patterns" title="Direct link to Troubleshooting Patterns" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-workflow-issues">Common Workflow Issues<a href="#common-workflow-issues" class="hash-link" aria-label="Direct link to Common Workflow Issues" title="Direct link to Common Workflow Issues" translate="no">​</a></h3>
+<p><strong>&quot;I&#x27;m drowning in data&quot;</strong></p>
+<ul>
+<li><strong>Solution</strong>: Focus on one feature at a time</li>
+<li>Start with just goals and feedback</li>
+<li>Add PR review when comfortable</li>
+<li>Skills last (quarterly cadence)</li>
+<li>Use filters aggressively</li>
+</ul>
+<p><strong>&quot;Can&#x27;t keep up with updates&quot;</strong></p>
+<ul>
+<li><strong>Solution</strong>: Batch process weekly</li>
+<li>Set specific time blocks</li>
+<li>Use quick capture methods</li>
+<li>Don&#x27;t aim for perfection</li>
+<li>Focus on high-value items</li>
+</ul>
+<p><strong>&quot;Reports feel overwhelming&quot;</strong></p>
+<ul>
+<li><strong>Solution</strong>: Start with shorter date ranges</li>
+<li>Focus on one section at a time</li>
+<li>Use reports as conversation starters</li>
+<li>Don&#x27;t over-analyze</li>
+<li>Trust the data</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adoption-challenges">Adoption Challenges<a href="#adoption-challenges" class="hash-link" aria-label="Direct link to Adoption Challenges" title="Direct link to Adoption Challenges" translate="no">​</a></h3>
+<p><strong>Team Resistance</strong></p>
+<ul>
+<li>Start with volunteers</li>
+<li>Show value through examples</li>
+<li>Don&#x27;t force adoption</li>
+<li>Iterate based on feedback</li>
+<li>Celebrate quick wins</li>
+</ul>
+<p><strong>Manager Skepticism</strong></p>
+<ul>
+<li>Demonstrate time savings</li>
+<li>Show report quality</li>
+<li>Share success stories</li>
+<li>Offer to help setup</li>
+<li>Be patient</li>
+</ul>
+<p><strong>Process Integration</strong></p>
+<ul>
+<li>Map to existing workflows</li>
+<li>Don&#x27;t add new meetings</li>
+<li>Replace existing tools</li>
+<li>Measure actual time spent</li>
+<li>Adjust as needed</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="success-metrics">Success Metrics<a href="#success-metrics" class="hash-link" aria-label="Direct link to Success Metrics" title="Direct link to Success Metrics" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="track-your-own-effectiveness">Track Your Own Effectiveness<a href="#track-your-own-effectiveness" class="hash-link" aria-label="Direct link to Track Your Own Effectiveness" title="Direct link to Track Your Own Effectiveness" translate="no">​</a></h3>
+<p><strong>Preparation Time</strong></p>
+<ul>
+<li>Before ManagerDash: [X hours]</li>
+<li>After ManagerDash: [Y hours]</li>
+<li>Time saved: [X-Y hours]</li>
+<li>Better prep quality: Yes/No</li>
+</ul>
+<p><strong>Data Quality</strong></p>
+<ul>
+<li>Feedback frequency</li>
+<li>Goal tracking completeness</li>
+<li>PR review coverage</li>
+<li>Skills assessment currency</li>
+</ul>
+<p><strong>Outcomes</strong></p>
+<ul>
+<li>Team satisfaction</li>
+<li>Clear goal alignment</li>
+<li>Evidence-based reviews</li>
+<li>Better development plans</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="team-specific-customizations">Team-Specific Customizations<a href="#team-specific-customizations" class="hash-link" aria-label="Direct link to Team-Specific Customizations" title="Direct link to Team-Specific Customizations" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-small-teams-2-5-people">For Small Teams (2-5 people)<a href="#for-small-teams-2-5-people" class="hash-link" aria-label="Direct link to For Small Teams (2-5 people)" title="Direct link to For Small Teams (2-5 people)" translate="no">​</a></h3>
+<ul>
+<li>Focus on individuals over teams</li>
+<li>Deep, detailed tracking</li>
+<li>Frequent updates</li>
+<li>Rich feedback capture</li>
+<li>Close monitoring</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-large-teams-15-people">For Large Teams (15+ people)<a href="#for-large-teams-15-people" class="hash-link" aria-label="Direct link to For Large Teams (15+ people)" title="Direct link to For Large Teams (15+ people)" translate="no">​</a></h3>
+<ul>
+<li>Heavy team-level view usage</li>
+<li>Delegate tracking to leads</li>
+<li>Focus on trends not details</li>
+<li>Monthly rather than weekly updates</li>
+<li>Aggregate reporting</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-distributed-teams">For Distributed Teams<a href="#for-distributed-teams" class="hash-link" aria-label="Direct link to For Distributed Teams" title="Direct link to For Distributed Teams" translate="no">​</a></h3>
+<ul>
+<li>Async-first feedback capture</li>
+<li>Document everything</li>
+<li>Use exported reports for sharing</li>
+<li>Extra context in notes</li>
+<li>Regular video check-ins with reports</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-growing-teams">For Growing Teams<a href="#for-growing-teams" class="hash-link" aria-label="Direct link to For Growing Teams" title="Direct link to For Growing Teams" translate="no">​</a></h3>
+<ul>
+<li>Template new hire onboarding</li>
+<li>Baseline assessments immediately</li>
+<li>Track ramp-up progress</li>
+<li>Document team growth</li>
+<li>Adjust processes quarterly</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="continuous-improvement">Continuous Improvement<a href="#continuous-improvement" class="hash-link" aria-label="Direct link to Continuous Improvement" title="Direct link to Continuous Improvement" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly-review-questions">Monthly Review Questions<a href="#monthly-review-questions" class="hash-link" aria-label="Direct link to Monthly Review Questions" title="Direct link to Monthly Review Questions" translate="no">​</a></h3>
+<ol>
+<li>What&#x27;s working well?</li>
+<li>What&#x27;s taking too much time?</li>
+<li>What data am I not using?</li>
+<li>What&#x27;s missing?</li>
+<li>How can I streamline?</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quarterly-process-check">Quarterly Process Check<a href="#quarterly-process-check" class="hash-link" aria-label="Direct link to Quarterly Process Check" title="Direct link to Quarterly Process Check" translate="no">​</a></h3>
+<ol>
+<li>Review time spent</li>
+<li>Assess data quality</li>
+<li>Survey team satisfaction</li>
+<li>Identify pain points</li>
+<li>Plan improvements</li>
+<li>Update workflows</li>
+<li>Share learnings</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="annual-reset">Annual Reset<a href="#annual-reset" class="hash-link" aria-label="Direct link to Annual Reset" title="Direct link to Annual Reset" translate="no">​</a></h3>
+<ol>
+<li>Archive old data</li>
+<li>Review and refine tags</li>
+<li>Update skill competencies</li>
+<li>Revise goal templates</li>
+<li>Clean up teams</li>
+<li>Refresh documentation</li>
+<li>Plan next year</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-help">Getting Help<a href="#getting-help" class="hash-link" aria-label="Direct link to Getting Help" title="Direct link to Getting Help" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-quick-reference">Documentation Quick Reference<a href="#documentation-quick-reference" class="hash-link" aria-label="Direct link to Documentation Quick Reference" title="Direct link to Documentation Quick Reference" translate="no">​</a></h3>
+<ul>
+<li><strong>Setup</strong>: See Overview (00-overview.md)</li>
+<li><strong>People Management</strong>: See Teams and People (01-teams-and-people.md)</li>
+<li><strong>Goal Tracking</strong>: See Goals and Milestones (02-goals-and-milestones.md)</li>
+<li><strong>Skills</strong>: See Skills Assessment (03-skills-assessment.md)</li>
+<li><strong>Feedback</strong>: See Feedback Management (04-feedback-management.md)</li>
+<li><strong>PRs</strong>: See PR Review (05-pr-review.md)</li>
+<li><strong>Reporting</strong>: See Reports (06-reports.md)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-questions">Common Questions<a href="#common-questions" class="hash-link" aria-label="Direct link to Common Questions" title="Direct link to Common Questions" translate="no">​</a></h3>
+<p><strong>Q: How much time should I spend in ManagerDash?</strong>
+A: 30 minutes weekly for maintenance, 1-2 hours monthly for reviews, 4 hours quarterly for deep work.</p>
+<p><strong>Q: Do I need to use all features?</strong>
+A: No! Start with goals and feedback. Add others as you&#x27;re comfortable.</p>
+<p><strong>Q: How often should I update skills assessments?</strong>
+A: Quarterly is sufficient for most people. More frequent for rapid growth roles.</p>
+<p><strong>Q: Should I share reports with team members?</strong>
+A: Yes, for transparency. Export and share before reviews or 1-on-1s.</p>
+<p><strong>Q: What if I fall behind?</strong>
+A: Catch up on high-priority items only. Don&#x27;t try to backfill everything perfectly.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="final-tips">Final Tips<a href="#final-tips" class="hash-link" aria-label="Direct link to Final Tips" title="Direct link to Final Tips" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dos">Do&#x27;s<a href="#dos" class="hash-link" aria-label="Direct link to Do&#x27;s" title="Direct link to Do&#x27;s" translate="no">​</a></h3>
+<p>✅ Capture data immediately when it happens
+✅ Use consistent patterns and tags
+✅ Export reports regularly
+✅ Share with team members transparently
+✅ Iterate and improve your process
+✅ Focus on high-value activities
+✅ Use filters and views effectively
+✅ Keep data current and accurate</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="donts">Don&#x27;ts<a href="#donts" class="hash-link" aria-label="Direct link to Don&#x27;ts" title="Direct link to Don&#x27;ts" translate="no">​</a></h3>
+<p>❌ Don&#x27;t try to track everything perfectly
+❌ Don&#x27;t spend more time tracking than managing
+❌ Don&#x27;t use as surveillance tool
+❌ Don&#x27;t share sensitive data inappropriately
+❌ Don&#x27;t compare people unfairly
+❌ Don&#x27;t neglect regular updates
+❌ Don&#x27;t ignore the data when making decisions
+❌ Don&#x27;t forget this is a tool to help, not replace, management</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
+<p>ManagerDash is most effective when:</p>
+<ul>
+<li>Used consistently</li>
+<li>Integrated into existing workflows</li>
+<li>Focused on high-value tracking</li>
+<li>Balanced with human judgment</li>
+<li>Continuously refined</li>
+</ul>
+<p>Start small, build habits, and expand usage as you see value. The goal is better management through better data, not perfect data capture.</p>
+<p>Remember: ManagerDash helps you be a better manager by giving you better information for better conversations. Use it to support and develop your team, not just to track them.</p>
+<hr>
+<p><strong>Documentation Complete</strong>: You&#x27;ve reached the end of the ManagerDash User Guide. For questions or issues, refer back to the relevant section above.</p>
+<p><strong>Version</strong>: 1.0.3
+<strong>Last Updated</strong>: October 2025</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/8_tips_best_practices.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/managerdash-docs/docs/reports"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reports</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#getting-started-right" class="table-of-contents__link toc-highlight">Getting Started Right</a><ul><li><a href="#first-week-setup" class="table-of-contents__link toc-highlight">First Week Setup</a></li><li><a href="#building-good-habits" class="table-of-contents__link toc-highlight">Building Good Habits</a></li></ul></li><li><a href="#organization-strategies" class="table-of-contents__link toc-highlight">Organization Strategies</a><ul><li><a href="#tagging-systems" class="table-of-contents__link toc-highlight">Tagging Systems</a></li><li><a href="#goal-structure" class="table-of-contents__link toc-highlight">Goal Structure</a></li><li><a href="#skills-assessment-framework" class="table-of-contents__link toc-highlight">Skills Assessment Framework</a></li></ul></li><li><a href="#time-saving-techniques" class="table-of-contents__link toc-highlight">Time-Saving Techniques</a><ul><li><a href="#keyboard-shortcuts-summary" class="table-of-contents__link toc-highlight">Keyboard Shortcuts Summary</a></li><li><a href="#batch-processing" class="table-of-contents__link toc-highlight">Batch Processing</a></li><li><a href="#template-creation" class="table-of-contents__link toc-highlight">Template Creation</a></li></ul></li><li><a href="#advanced-workflows" class="table-of-contents__link toc-highlight">Advanced Workflows</a><ul><li><a href="#performance-review-cycle" class="table-of-contents__link toc-highlight">Performance Review Cycle</a></li><li><a href="#promotion-preparation" class="table-of-contents__link toc-highlight">Promotion Preparation</a></li><li><a href="#team-calibration" class="table-of-contents__link toc-highlight">Team Calibration</a></li></ul></li><li><a href="#integration-strategies" class="table-of-contents__link toc-highlight">Integration Strategies</a><ul><li><a href="#with-your-calendar" class="table-of-contents__link toc-highlight">With Your Calendar</a></li><li><a href="#with-1-on-1s" class="table-of-contents__link toc-highlight">With 1-on-1s</a></li><li><a href="#with-team-meetings" class="table-of-contents__link toc-highlight">With Team Meetings</a></li></ul></li><li><a href="#data-management" class="table-of-contents__link toc-highlight">Data Management</a><ul><li><a href="#backup-strategy" class="table-of-contents__link toc-highlight">Backup Strategy</a></li><li><a href="#data-hygiene" class="table-of-contents__link toc-highlight">Data Hygiene</a></li><li><a href="#privacy-management" class="table-of-contents__link toc-highlight">Privacy Management</a></li></ul></li><li><a href="#troubleshooting-patterns" class="table-of-contents__link toc-highlight">Troubleshooting Patterns</a><ul><li><a href="#common-workflow-issues" class="table-of-contents__link toc-highlight">Common Workflow Issues</a></li><li><a href="#adoption-challenges" class="table-of-contents__link toc-highlight">Adoption Challenges</a></li></ul></li><li><a href="#success-metrics" class="table-of-contents__link toc-highlight">Success Metrics</a><ul><li><a href="#track-your-own-effectiveness" class="table-of-contents__link toc-highlight">Track Your Own Effectiveness</a></li></ul></li><li><a href="#team-specific-customizations" class="table-of-contents__link toc-highlight">Team-Specific Customizations</a><ul><li><a href="#for-small-teams-2-5-people" class="table-of-contents__link toc-highlight">For Small Teams (2-5 people)</a></li><li><a href="#for-large-teams-15-people" class="table-of-contents__link toc-highlight">For Large Teams (15+ people)</a></li><li><a href="#for-distributed-teams" class="table-of-contents__link toc-highlight">For Distributed Teams</a></li><li><a href="#for-growing-teams" class="table-of-contents__link toc-highlight">For Growing Teams</a></li></ul></li><li><a href="#continuous-improvement" class="table-of-contents__link toc-highlight">Continuous Improvement</a><ul><li><a href="#monthly-review-questions" class="table-of-contents__link toc-highlight">Monthly Review Questions</a></li><li><a href="#quarterly-process-check" class="table-of-contents__link toc-highlight">Quarterly Process Check</a></li><li><a href="#annual-reset" class="table-of-contents__link toc-highlight">Annual Reset</a></li></ul></li><li><a href="#getting-help" class="table-of-contents__link toc-highlight">Getting Help</a><ul><li><a href="#documentation-quick-reference" class="table-of-contents__link toc-highlight">Documentation Quick Reference</a></li><li><a href="#common-questions" class="table-of-contents__link toc-highlight">Common Questions</a></li></ul></li><li><a href="#final-tips" class="table-of-contents__link toc-highlight">Final Tips</a><ul><li><a href="#dos" class="table-of-contents__link toc-highlight">Do&#39;s</a></li><li><a href="#donts" class="table-of-contents__link toc-highlight">Don&#39;ts</a></li></ul></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/managerdash-docs/docs/getting-started/getting-started">Getting Started</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/managerdash-docs/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Embrace Change Consulting.</div></div></div></footer></div>
+</body>
+</html>

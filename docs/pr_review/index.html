@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-pr_review" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">Pull Request Review | ManagerDash Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/pr_review"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Pull Request Review | ManagerDash Docs"><meta data-rh="true" name="description" content="This guide covers how to fetch, review, and rate pull requests in ManagerDash."><meta data-rh="true" property="og:description" content="This guide covers how to fetch, review, and rate pull requests in ManagerDash."><link data-rh="true" rel="icon" href="/managerdash-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/pr_review"><link data-rh="true" rel="alternate" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/pr_review" hreflang="en"><link data-rh="true" rel="alternate" href="https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/pr_review" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pull Request Review","item":"https://Embrace-Change-Consulting.github.io/managerdash-docs/docs/pr_review"}]}</script><link rel="alternate" type="application/rss+xml" href="/managerdash-docs/blog/rss.xml" title="ManagerDash Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/managerdash-docs/blog/atom.xml" title="ManagerDash Docs Atom Feed"><link rel="stylesheet" href="/managerdash-docs/assets/css/styles.912e5f14.css">
+<script src="/managerdash-docs/assets/js/runtime~main.ff18cd51.js" defer="defer"></script>
+<script src="/managerdash-docs/assets/js/main.e327a57d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/managerdash-docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/managerdash-docs/"><div class="navbar__logo"><img src="/managerdash-docs/img/logo.svg" alt="ManagerDash Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/managerdash-docs/img/logo.svg" alt="ManagerDash Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ManagerDash</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/managerdash-docs/docs/category/getting-started">Docs</a><a class="navbar__item navbar__link" href="/managerdash-docs/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/managerdash-docs/docs/category/getting-started"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a><button aria-label="Expand sidebar category &#x27;Getting Started&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/teams_and_people"><span title="Configuring your team" class="linkLabel_WmDU">Configuring your team</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/goals-and-milestones"><span title="Goals and Milestones" class="linkLabel_WmDU">Goals and Milestones</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/assessing-skills"><span title="Skills Assessment" class="linkLabel_WmDU">Skills Assessment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/feedback"><span title="Feedback Management" class="linkLabel_WmDU">Feedback Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/managerdash-docs/docs/pr_review"><span title="Pull Request Review" class="linkLabel_WmDU">Pull Request Review</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/reports"><span title="Reports" class="linkLabel_WmDU">Reports</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/managerdash-docs/docs/tips_best_practices"><span title="Tips and Best Practices" class="linkLabel_WmDU">Tips and Best Practices</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/managerdash-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Pull Request Review</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Pull Request Review</h1></header><p>This guide covers how to fetch, review, and rate pull requests in ManagerDash.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-pr-review">Understanding PR Review<a href="#understanding-pr-review" class="hash-link" aria-label="Direct link to Understanding PR Review" title="Direct link to Understanding PR Review" translate="no">​</a></h2>
+<p>The PR Review feature helps you:</p>
+<ul>
+<li>Fetch PRs directly from GitHub</li>
+<li>Rate PR quality and complexity</li>
+<li>Add context and notes to each PR</li>
+<li>Track PR metrics over time</li>
+<li>Include PR evaluations in reports</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h3>
+<p>To use PR Review, you need:</p>
+<ul>
+<li>GitHub username configured for the person (in their alias profile)</li>
+<li>GitHub Personal Access Token (configured in Settings → Preferences)</li>
+<li>Internet connection to fetch from GitHub</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setting-up-github-integration">Setting Up GitHub Integration<a href="#setting-up-github-integration" class="hash-link" aria-label="Direct link to Setting Up GitHub Integration" title="Direct link to Setting Up GitHub Integration" translate="no">​</a></h2>
+<p>See &quot;GitHub Token Setup&quot; for instructions on how to generate a token and add it to ManagerDash</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fetching-pull-requests">Fetching Pull Requests<a href="#fetching-pull-requests" class="hash-link" aria-label="Direct link to Fetching Pull Requests" title="Direct link to Fetching Pull Requests" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="basic-fetch">Basic Fetch<a href="#basic-fetch" class="hash-link" aria-label="Direct link to Basic Fetch" title="Direct link to Basic Fetch" translate="no">​</a></h3>
+<ol>
+<li>Select a person from the sidebar</li>
+<li>Click the <strong>PR Review</strong> tab</li>
+<li>Set the date range:<!-- -->
+<ul>
+<li><strong>Start Date</strong>: Beginning of period</li>
+<li><strong>End Date</strong>: End of period (today by default)</li>
+</ul>
+</li>
+<li>Click <strong>&quot;Fetch Pull Requests&quot;</strong></li>
+<li>Wait for the fetch to complete (may take several seconds)</li>
+<li>PRs appear grouped by repository</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-gets-fetched">What Gets Fetched<a href="#what-gets-fetched" class="hash-link" aria-label="Direct link to What Gets Fetched" title="Direct link to What Gets Fetched" translate="no">​</a></h3>
+<p>The system fetches:</p>
+<ul>
+<li><strong>Closed PRs only</strong>: Merged or closed (not open PRs)</li>
+<li><strong>Author Match</strong>: PRs where the person is the author</li>
+<li><strong>Date Filter</strong>: PRs closed within the selected range</li>
+<li><strong>All Repos</strong>: Across all repositories they (and your token) have access to</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pr-data-included">PR Data Included<a href="#pr-data-included" class="hash-link" aria-label="Direct link to PR Data Included" title="Direct link to PR Data Included" translate="no">​</a></h3>
+<p>For each PR:</p>
+<ul>
+<li><strong>Title</strong>: PR name</li>
+<li><strong>Repository</strong>: Repo name</li>
+<li><strong>PR Number</strong>: Link to GitHub</li>
+<li><strong>Status</strong>: Closed/Merged</li>
+<li><strong>Dates</strong>: Created and closed dates</li>
+<li><strong>Changes</strong>: Lines added/deleted</li>
+<li><strong>Files</strong>: Number of files changed</li>
+<li><strong>Comments</strong>: Total comments and review comments</li>
+<li><strong>Labels</strong>: Any GitHub labels</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rating-pull-requests">Rating Pull Requests<a href="#rating-pull-requests" class="hash-link" aria-label="Direct link to Rating Pull Requests" title="Direct link to Rating Pull Requests" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-traffic-light-system">The Traffic Light System<a href="#the-traffic-light-system" class="hash-link" aria-label="Direct link to The Traffic Light System" title="Direct link to The Traffic Light System" translate="no">​</a></h3>
+<p>PRs are rated using a three-level system:</p>
+<table><thead><tr><th>Symbol</th><th>Color</th><th>Meaning</th></tr></thead><tbody><tr><td>-</td><td>Yellow</td><td>Feedback opportunity</td></tr><tr><td>=</td><td>Blue</td><td>Meets expectations</td></tr><tr><td>+</td><td>Green</td><td>Exceeds expectations</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-rate">How to Rate<a href="#how-to-rate" class="hash-link" aria-label="Direct link to How to Rate" title="Direct link to How to Rate" translate="no">​</a></h3>
+<ol>
+<li>Find the PR in the list</li>
+<li>Click one of the three colored circles:<!-- -->
+<ul>
+<li><strong>Yellow</strong> (left): Feedback opportunity</li>
+<li><strong>Blue</strong> (middle): Meeting expectations</li>
+<li><strong>Green</strong> (right): Exceeding expectations</li>
+</ul>
+</li>
+<li>The circle glows and enlarges when selected</li>
+<li>Rating saves automatically</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rating-criteria">Rating Criteria<a href="#rating-criteria" class="hash-link" aria-label="Direct link to Rating Criteria" title="Direct link to Rating Criteria" translate="no">​</a></h3>
+<p><strong>Feedback opportunity (-)</strong>:
+Rating a pull request as a feedback opportunity is a way for managers to find trends in technical contributions, not as an error tally. It should be relative to the engineer&#x27;s past performance and experience level. For example. A PR from an early career engineer that undergoes multiple rounds of review may suggest a mini retro in a 1:1 to ensure they are learning from the experience. A PR from a more senior engineer that requires significant rework may suggest a larger coaching conversation around doing more thorough planning or technical design.</p>
+<p>Here are a few other reasons why you may mark a PR as a feedback opportunity:</p>
+<ul>
+<li>Requires significant rework</li>
+<li>Multiple rounds of review needed</li>
+<li>Poor code quality or design, or would have benefitted from additional planning</li>
+<li>Incomplete testing or documentation</li>
+<li>Breaks existing functionality/needs to be reverted</li>
+</ul>
+<p>When you mark a PR as a Feedback Opportunity, your notes will also be recorded as pending feedback.</p>
+<p><strong>Meeting Expectations (=)</strong>:
+A PR is Meeting Expectations if it is a good representation of the contribution expected from an engineer at any level. What is defined as quality contributions will vary between companies and teams, but some examples of contributions that meet expectations are:</p>
+<ul>
+<li>Clean, well-structured code</li>
+<li>Normal review process</li>
+<li>Basic testing included</li>
+<li>Clear purpose and implementation</li>
+<li>Minor feedback addressed</li>
+<li>Descriptive test cases</li>
+</ul>
+<p><strong>Exceeding Expectations (+)</strong>:
+A PR is Exceeding Expectations if it represents an outstanding contribution from an engineer who is operating above their level. For an entry-level engineer, an exceptional contribution could be one that fixes a tricky race-condition. For a more senior engineer, an exceptional contribution could be one that solves an entire class of problems through a clear refactor. Some other reasons why a contribution may be rated as exceeding expectations:</p>
+<ul>
+<li>Exceptional quality</li>
+<li>Comprehensive testing</li>
+<li>Great documentation</li>
+<li>Handles edge cases</li>
+<li>Considers future maintenance</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-to-rate">When to Rate<a href="#when-to-rate" class="hash-link" aria-label="Direct link to When to Rate" title="Direct link to When to Rate" translate="no">​</a></h3>
+<p><strong>Rate PRs When</strong>:</p>
+<ul>
+<li>You&#x27;ve reviewed the PR thoroughly</li>
+<li>You have enough context to evaluate</li>
+<li>The contribution is meaningful (ie: not bumping a dependency)</li>
+<li>It would provide good context during a performance review</li>
+</ul>
+<p><strong>Don&#x27;t Rate If</strong>:</p>
+<ul>
+<li>You haven&#x27;t reviewed it</li>
+<li>You lack context to judge</li>
+<li>It&#x27;s trivial (typo fixes, etc.)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-notes-to-prs">Adding Notes to PRs<a href="#adding-notes-to-prs" class="hash-link" aria-label="Direct link to Adding Notes to PRs" title="Direct link to Adding Notes to PRs" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-add-notes">Why Add Notes<a href="#why-add-notes" class="hash-link" aria-label="Direct link to Why Add Notes" title="Direct link to Why Add Notes" translate="no">​</a></h3>
+<p>Notes help you:</p>
+<ul>
+<li>Document reasoning for ratings</li>
+<li>Capture specific examples</li>
+<li>Remember context months later</li>
+<li>Prepare for performance discussions</li>
+<li>Justify ratings in reviews</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-add-notes">How to Add Notes<a href="#how-to-add-notes" class="hash-link" aria-label="Direct link to How to Add Notes" title="Direct link to How to Add Notes" translate="no">​</a></h3>
+<ol>
+<li>Rate the PR first (select a circle)</li>
+<li>A text area appears below the PR</li>
+<li>Type your notes</li>
+<li>Notes save automatically after 500ms</li>
+<li>No &quot;Save&quot; button needed</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-to-include-in-notes">What to Include in Notes<a href="#what-to-include-in-notes" class="hash-link" aria-label="Direct link to What to Include in Notes" title="Direct link to What to Include in Notes" translate="no">​</a></h3>
+<p><strong>Good Notes Include</strong>:</p>
+<ul>
+<li>Specific observations</li>
+<li>Technical details</li>
+<li>Impact assessment</li>
+<li>Review cycle summary</li>
+<li>Learning moments</li>
+</ul>
+<p><strong>Examples</strong>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Not meeting (-):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;Required 3 rounds of review. Initial implementation missed </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">error handling and had unclear variable names. Eventually </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">got to acceptable state but needed significant guidance.&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Meeting (=):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;Solid implementation of feature X. Clear code, good tests. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">One round of minor feedback on naming conventions. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Merged smoothly.&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Exceeding (+):</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;Outstanding work on performance optimization. Not only </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">solved the immediate problem but proactively added </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">benchmarks and documentation. Reduced query time by 80%. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Excellent example for the team.&quot;</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opening-in-github">Opening in GitHub<a href="#opening-in-github" class="hash-link" aria-label="Direct link to Opening in GitHub" title="Direct link to Opening in GitHub" translate="no">​</a></h3>
+<p>Click the <strong>PR title</strong> to open in your browser:</p>
+<ul>
+<li>Opens GitHub PR page</li>
+<li>View full conversation</li>
+<li>See code changes</li>
+<li>Check review comments</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-workflows">Common Workflows<a href="#common-workflows" class="hash-link" aria-label="Direct link to Common Workflows" title="Direct link to Common Workflows" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly-review">Weekly Review<a href="#weekly-review" class="hash-link" aria-label="Direct link to Weekly Review" title="Direct link to Weekly Review" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Friday:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">1. Select team member</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. Set date range to last 7 days (this is the default)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. Fetch PRs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">4. Rate contributions of note</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">5. Add quick notes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">6. Repeat for each team member</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly-performance-check">Monthly Performance Check<a href="#monthly-performance-check" class="hash-link" aria-label="Direct link to Monthly Performance Check" title="Direct link to Monthly Performance Check" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">End of month:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">1. Set date range to last 30 days</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. Fetch PRs (or view PRs already reviewed)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. Review all PRs for patterns</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">4. Rate and add detailed notes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">5. Include in monthly 1-on-1</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quarterly-review-prep">Quarterly Review Prep<a href="#quarterly-review-prep" class="hash-link" aria-label="Direct link to Quarterly Review Prep" title="Direct link to Quarterly Review Prep" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">2 weeks before review:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">1. Set date range to 90 days</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. Fetch PRs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. Rate all PRs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">4. Add comprehensive notes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">5. Look for patterns (improvement/decline)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">6. Generate report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">7. Use in performance discussions or promotion pitch</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rating-consistency">Rating Consistency<a href="#rating-consistency" class="hash-link" aria-label="Direct link to Rating Consistency" title="Direct link to Rating Consistency" translate="no">​</a></h3>
+<ol>
+<li><strong>Define Standards</strong>: Document what each rating means for your team</li>
+<li><strong>Calibrate Regularly</strong>: Discuss ratings with other leads</li>
+<li><strong>Context Matters</strong>: Consider complexity and scope</li>
+<li><strong>Be Fair</strong>: Don&#x27;t compare early career to senior</li>
+<li><strong>Trend Over Time</strong>: Look for improvement patterns</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="note-taking">Note-Taking<a href="#note-taking" class="hash-link" aria-label="Direct link to Note-Taking" title="Direct link to Note-Taking" translate="no">​</a></h3>
+<ol>
+<li><strong>Be Timely</strong>: Add notes within days of merge</li>
+<li><strong>Be Specific</strong>: Reference concrete issues or wins</li>
+<li><strong>Be Balanced</strong>: Note good the good work you want to highlight, as well as any opportunities for growth</li>
+<li><strong>Be Professional</strong>: Focus on work, not person</li>
+<li><strong>Be Future-Focused</strong>: Help your future self remember</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reporting">Reporting<a href="#reporting" class="hash-link" aria-label="Direct link to Reporting" title="Direct link to Reporting" translate="no">​</a></h2>
+<p>PR data appears in reports:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="individual-reports">Individual Reports<a href="#individual-reports" class="hash-link" aria-label="Direct link to Individual Reports" title="Direct link to Individual Reports" translate="no">​</a></h3>
+<ul>
+<li>Total rated PRs in period</li>
+<li>Rating breakdown (Not meeting/Meeting/Exceeding)</li>
+<li>Individual PR details</li>
+<li>Notes included</li>
+<li>Metrics summary</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="export-format">Export Format<a href="#export-format" class="hash-link" aria-label="Direct link to Export Format" title="Direct link to Export Format" translate="no">​</a></h3>
+<p>Reports include:</p>
+<ul>
+<li>PR title and repo</li>
+<li>Rating with label</li>
+<li>Dates and metrics</li>
+<li>Notes for context</li>
+<li>Markdown formatted</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-issues">Common Issues<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues" title="Direct link to Common Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="no-prs-found">No PRs Found<a href="#no-prs-found" class="hash-link" aria-label="Direct link to No PRs Found" title="Direct link to No PRs Found" translate="no">​</a></h3>
+<p><strong>Problem</strong>: Fetch returns no results
+<strong>Solution</strong>:</p>
+<ul>
+<li>Verify GitHub username is correct in alias profile</li>
+<li>Check date range (too narrow?)</li>
+<li>Ensure person authored PRs in that period</li>
+<li>Verify GitHub token is valid</li>
+<li>Check internet connection</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cant-fetch-prs">Can&#x27;t Fetch PRs<a href="#cant-fetch-prs" class="hash-link" aria-label="Direct link to Can&#x27;t Fetch PRs" title="Direct link to Can&#x27;t Fetch PRs" translate="no">​</a></h3>
+<p><strong>Problem</strong>: &quot;Failed to fetch&quot; error
+<strong>Solution</strong>:</p>
+<ul>
+<li>Check GitHub token in Preferences</li>
+<li>Verify token has correct permissions</li>
+<li>Check internet connection</li>
+<li>Try refreshing the app</li>
+<li>Generate new token if expired</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rating-not-saving">Rating Not Saving<a href="#rating-not-saving" class="hash-link" aria-label="Direct link to Rating Not Saving" title="Direct link to Rating Not Saving" translate="no">​</a></h3>
+<p><strong>Problem</strong>: Click rating but it doesn&#x27;t stick
+<strong>Solution</strong>:</p>
+<ul>
+<li>Wait for save indicator</li>
+<li>Check console for errors</li>
+<li>Try refreshing the page</li>
+<li>Re-rate the PR</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="notes-disappearing">Notes Disappearing<a href="#notes-disappearing" class="hash-link" aria-label="Direct link to Notes Disappearing" title="Direct link to Notes Disappearing" translate="no">​</a></h3>
+<p><strong>Problem</strong>: Type notes but they vanish
+<strong>Solution</strong>:</p>
+<ul>
+<li>Wait 500ms after typing (auto-save delay)</li>
+<li>Don&#x27;t navigate away immediately</li>
+<li>Check that PR was rated first (notes only for rated PRs)</li>
+<li>Try refreshing and re-entering</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="github-token-invalid">GitHub Token Invalid<a href="#github-token-invalid" class="hash-link" aria-label="Direct link to GitHub Token Invalid" title="Direct link to GitHub Token Invalid" translate="no">​</a></h3>
+<p><strong>Problem</strong>: &quot;Invalid token&quot; error
+<strong>Solution</strong>:</p>
+<ul>
+<li>Regenerate token on GitHub</li>
+<li>Ensure correct scopes selected</li>
+<li>Copy entire token (no spaces)</li>
+<li>Save in Preferences</li>
+<li>Try fetching again</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="privacy-and-security">Privacy and Security<a href="#privacy-and-security" class="hash-link" aria-label="Direct link to Privacy and Security" title="Direct link to Privacy and Security" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="token-security">Token Security<a href="#token-security" class="hash-link" aria-label="Direct link to Token Security" title="Direct link to Token Security" translate="no">​</a></h3>
+<ul>
+<li>Token is stored locally on your machine</li>
+<li>Never transmitted except to GitHub API</li>
+<li>Rotate tokens periodically</li>
+<li>Revoke old tokens on GitHub</li>
+<li>Don&#x27;t share your token</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-privacy">Data Privacy<a href="#data-privacy" class="hash-link" aria-label="Direct link to Data Privacy" title="Direct link to Data Privacy" translate="no">​</a></h3>
+<ul>
+<li>All PR data stored locally</li>
+<li>Ratings and notes are private</li>
+<li>Only visible on your machine</li>
+<li>Export carefully for sharing</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="keyboard-shortcuts">Keyboard Shortcuts<a href="#keyboard-shortcuts" class="hash-link" aria-label="Direct link to Keyboard Shortcuts" title="Direct link to Keyboard Shortcuts" translate="no">​</a></h2>
+<p>While viewing PRs:</p>
+<ul>
+<li><strong>Tab</strong>: Navigate between PRs</li>
+<li><strong>1, 2, 3</strong>: Quick rate (Not meeting, Meeting, Exceeding)</li>
+<li><strong>Enter</strong>: Expand/collapse repository</li>
+<li><strong>Click Title</strong>: Open in GitHub</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/6_pr_review.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/managerdash-docs/docs/feedback"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Feedback Management</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/managerdash-docs/docs/reports"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Reports</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#understanding-pr-review" class="table-of-contents__link toc-highlight">Understanding PR Review</a><ul><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li></ul></li><li><a href="#setting-up-github-integration" class="table-of-contents__link toc-highlight">Setting Up GitHub Integration</a></li><li><a href="#fetching-pull-requests" class="table-of-contents__link toc-highlight">Fetching Pull Requests</a><ul><li><a href="#basic-fetch" class="table-of-contents__link toc-highlight">Basic Fetch</a></li><li><a href="#what-gets-fetched" class="table-of-contents__link toc-highlight">What Gets Fetched</a></li><li><a href="#pr-data-included" class="table-of-contents__link toc-highlight">PR Data Included</a></li></ul></li><li><a href="#rating-pull-requests" class="table-of-contents__link toc-highlight">Rating Pull Requests</a><ul><li><a href="#the-traffic-light-system" class="table-of-contents__link toc-highlight">The Traffic Light System</a></li><li><a href="#how-to-rate" class="table-of-contents__link toc-highlight">How to Rate</a></li><li><a href="#rating-criteria" class="table-of-contents__link toc-highlight">Rating Criteria</a></li><li><a href="#when-to-rate" class="table-of-contents__link toc-highlight">When to Rate</a></li></ul></li><li><a href="#adding-notes-to-prs" class="table-of-contents__link toc-highlight">Adding Notes to PRs</a><ul><li><a href="#why-add-notes" class="table-of-contents__link toc-highlight">Why Add Notes</a></li><li><a href="#how-to-add-notes" class="table-of-contents__link toc-highlight">How to Add Notes</a></li><li><a href="#what-to-include-in-notes" class="table-of-contents__link toc-highlight">What to Include in Notes</a></li><li><a href="#opening-in-github" class="table-of-contents__link toc-highlight">Opening in GitHub</a></li></ul></li><li><a href="#common-workflows" class="table-of-contents__link toc-highlight">Common Workflows</a><ul><li><a href="#weekly-review" class="table-of-contents__link toc-highlight">Weekly Review</a></li><li><a href="#monthly-performance-check" class="table-of-contents__link toc-highlight">Monthly Performance Check</a></li><li><a href="#quarterly-review-prep" class="table-of-contents__link toc-highlight">Quarterly Review Prep</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#rating-consistency" class="table-of-contents__link toc-highlight">Rating Consistency</a></li><li><a href="#note-taking" class="table-of-contents__link toc-highlight">Note-Taking</a></li></ul></li><li><a href="#reporting" class="table-of-contents__link toc-highlight">Reporting</a><ul><li><a href="#individual-reports" class="table-of-contents__link toc-highlight">Individual Reports</a></li><li><a href="#export-format" class="table-of-contents__link toc-highlight">Export Format</a></li></ul></li><li><a href="#common-issues" class="table-of-contents__link toc-highlight">Common Issues</a><ul><li><a href="#no-prs-found" class="table-of-contents__link toc-highlight">No PRs Found</a></li><li><a href="#cant-fetch-prs" class="table-of-contents__link toc-highlight">Can&#39;t Fetch PRs</a></li><li><a href="#rating-not-saving" class="table-of-contents__link toc-highlight">Rating Not Saving</a></li><li><a href="#notes-disappearing" class="table-of-contents__link toc-highlight">Notes Disappearing</a></li><li><a href="#github-token-invalid" class="table-of-contents__link toc-highlight">GitHub Token Invalid</a></li></ul></li><li><a href="#privacy-and-security" class="table-of-contents__link toc-highlight">Privacy and Security</a><ul><li><a href="#token-security" class="table-of-contents__link toc-highlight">Token Security</a></li><li><a href="#data-privacy" class="table-of-contents__link toc-highlight">Data Privacy</a></li></ul></li><li><a href="#keyboard-shortcuts" class="table-of-contents__link toc-highlight">Keyboard Shortcuts</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/managerdash-docs/docs/getting-started/getting-started">Getting Started</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/managerdash-docs/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Embrace Change Consulting.</div></div></div></footer></div>
+</body>
+</html>

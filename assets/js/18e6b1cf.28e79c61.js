@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmanagerdash_docs=globalThis.webpackChunkmanagerdash_docs||[]).push([[8549],{4305:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/managerdash-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
