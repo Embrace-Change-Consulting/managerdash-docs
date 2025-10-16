@@ -402,7 +402,7 @@ Before you finish, verify:
 
 If you're still having issues:
 
-1. Review the [PR Review Guide](05-pr-review.md)
+1. Review the [PR Review Guide](../6_pr_review.md)
 2. Check the Troubleshooting section above
 3. Verify all steps were followed exactly
 4. Try generating a completely new token
