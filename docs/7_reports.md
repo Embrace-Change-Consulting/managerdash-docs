@@ -3,6 +3,8 @@ sidebar_position: 7
 title: Reports
 ---
 
+<img src={require('@site/static/img/app_img/alias_report_light.png').default} alt="Reports" style={{float: 'right', marginLeft: '20px', marginBottom: '20px', maxWidth: '400px'}} />
+
 This guide covers how to generate, view, and export comprehensive reports in ManagerDash.
 
 ## Understanding Reports

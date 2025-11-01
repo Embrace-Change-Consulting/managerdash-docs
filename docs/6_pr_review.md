@@ -3,6 +3,8 @@ sidebar_position: 6
 title: Pull Request Review
 ---
 
+<img src={require('@site/static/img/app_img/alias_pr_review_light.png').default} alt="PR Review" style={{float: 'right', marginLeft: '20px', marginBottom: '20px', maxWidth: '400px'}} />
+
 This guide covers how to fetch, review, and rate pull requests in ManagerDash.
 
 ## Understanding PR Review

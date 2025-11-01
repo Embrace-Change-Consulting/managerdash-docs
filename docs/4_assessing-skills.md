@@ -3,6 +3,8 @@ sidebar_position: 4
 title: Skills Assessment
 ---
 
+<img src={require('@site/static/img/app_img/alias_skills_assessment_light.png').default} alt="Skills Assessment" style={{float: 'right', marginLeft: '20px', marginBottom: '20px', maxWidth: '400px'}} />
+
 This guide covers how to evaluate and track skills and competencies in ManagerDash.
 
 ## Understanding Skills Assessment
