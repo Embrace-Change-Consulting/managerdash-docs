@@ -9,6 +9,7 @@ interface AppImage {
   description: string;
   src: string;
   category: string;
+  link?: string;
 }
 
 const appImages: AppImage[] = [
@@ -17,67 +18,79 @@ const appImages: AppImage[] = [
     description: 'View your team overview in dark mode',
     src: '/img/app_img/team_dashboard_dark.png',
     category: 'Dashboard',
+    link: '/docs/teams_and_people#team-dashboard',
   },
   {
     title: 'Team Dashboard - Light Mode',
     description: 'View your team overview in light mode',
     src: '/img/app_img/team_dashboard_light.png',
     category: 'Dashboard',
+    link: '/docs/teams_and_people#team-dashboard',
   },
   {
     title: 'Alias Dashboard',
     description: 'Individual contributor dashboard',
     src: '/img/app_img/alias_dashboard_light.png',
     category: 'Dashboard',
+    link: '/docs/teams_and_people#individual-dashboard',
   },
   {
     title: 'Goals & Milestones',
     description: 'Track and manage team goals',
     src: '/img/app_img/alias_goals_light.png',
     category: 'Features',
+    link: '/docs/goals-and-milestones',
   },
   {
     title: 'Skills Assessment',
     description: 'Evaluate and track skill development',
     src: '/img/app_img/alias_skills_assessment_light.png',
     category: 'Features',
+    link: '/docs/assessing-skills',
   },
   {
     title: 'Team Skills Overview',
     description: 'View team-wide skills matrix',
     src: '/img/app_img/team_skills_light.png',
     category: 'Features',
+    link: '/docs/assessing-skills#team-skills-view',
   },
   {
     title: 'PR Review Dashboard',
     description: 'Monitor pull request reviews',
     src: '/img/app_img/alias_pr_review_light.png',
     category: 'Features',
+    link: '/docs/pr_review',
   },
   {
     title: 'Feedback Management',
     description: 'Provide and track feedback',
     src: '/img/app_img/alias_feedback_light.png',
     category: 'Features',
+    link: '/docs/feedback',
   },
   {
     title: 'Individual Reports',
     description: 'Generate detailed individual reports',
     src: '/img/app_img/alias_report_light.png',
     category: 'Reports',
+    link: '/docs/reports#generating-individual-reports',
   },
   {
     title: 'Team Reports',
     description: 'Generate comprehensive team reports',
     src: '/img/app_img/team_report_light.png',
     category: 'Reports',
+    link: '/docs/reports#team-reports',
   },
 ];
 
 function ImageCard({image}: {image: AppImage}): ReactNode {
   const imageSrc = useBaseUrl(image.src);
-  return (
-    <div className={styles.imageCard}>
+  const imageLink = image.link ? useBaseUrl(image.link) : undefined;
+  
+  const imageContent = (
+    <>
       <div className={styles.imageWrapper}>
         <img
           src={imageSrc}
@@ -91,6 +104,20 @@ function ImageCard({image}: {image: AppImage}): ReactNode {
         <p className={styles.imageDescription}>{image.description}</p>
         <span className={styles.categoryBadge}>{image.category}</span>
       </div>
+    </>
+  );
+  
+  if (imageLink) {
+    return (
+      <a href={imageLink} className={styles.imageCard}>
+        {imageContent}
+      </a>
+    );
+  }
+  
+  return (
+    <div className={styles.imageCard}>
+      {imageContent}
     </div>
   );
 }
@@ -146,14 +173,14 @@ export default function Downloads(): ReactNode {
                     className={styles.primaryDownloadButton}
                     download
                   >
-                    Download DMG
+                    Download DMG v1.3.0
                   </a>
                   <a 
                     href={zipUrl} 
                     className={styles.secondaryDownloadLink}
                     download
                   >
-                    Download ZIP instead
+                    Download ZIP v1.3.0 instead
                   </a>
                 </div>
               </div>
@@ -172,12 +199,8 @@ export default function Downloads(): ReactNode {
         <header className={styles.pageHeader}>
           <div className="container">
             <Heading as="h2" className={styles.pageTitle}>
-              Screenshots & Images
+              Feature Gallery
             </Heading>
-            <p className={styles.pageSubtitle}>
-              Explore ManagerDash features through our comprehensive screenshot gallery.
-              Click on any image to view it in full size.
-            </p>
           </div>
         </header>
         <main className="container">
