@@ -6,7 +6,7 @@ description: Download and install ManagerDash.
 ---
 
 ## Install
-1. Download **ManagerDesk for macOS** from INSERT_LINK.
+1. Download **ManagerDesk for macOS** from [the downloads page](/downloads).
 2. Open the `.dmg` and drag to **Applications**.
 
 ## First run: create your first alias
