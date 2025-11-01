@@ -4,6 +4,8 @@ import Heading from '@theme/Heading';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './downloads.module.css';
 
+const CURRENT_VERSION = "1.3.0"
+
 interface AppImage {
   title: string;
   description: string;
@@ -148,13 +150,11 @@ export default function Downloads(): ReactNode {
   }, {} as Record<string, AppImage[]>);
 
   const heroImageSrc = useBaseUrl('/img/app_img/team_skills_light.png');
-  const dmgUrl = 'https://managerdash-releases.s3.us-east-1.amazonaws.com/releases/1.3.0/ManagerDash-mac-1.3.0.dmg';
-  const zipUrl = 'https://managerdash-releases.s3.us-east-1.amazonaws.com/releases/1.3.0/ManagerDash-mac-1.3.0.zip';
+  const dmgUrl = `https://managerdash-releases.s3.us-east-1.amazonaws.com/releases/${CURRENT_VERSION}/ManagerDash-mac-${CURRENT_VERSION}.dmg`;
+  const zipUrl = `https://managerdash-releases.s3.us-east-1.amazonaws.com/releases/${CURRENT_VERSION}/ManagerDash-mac-${CURRENT_VERSION}.zip`;
 
   return (
-    <Layout
-      title="Downloads"
-      description="Download ManagerDash for macOS">
+    <Layout title="Downloads" description="Download ManagerDash for macOS">
       <div className={styles.downloadsPage}>
         {/* Hero Section */}
         <section className={styles.heroSection}>
@@ -165,29 +165,30 @@ export default function Downloads(): ReactNode {
                   Download the latest
                 </Heading>
                 <p className={styles.heroDescription}>
-                  Get the latest version of ManagerDash for macOS and start managing your team more effectively.
+                  Get the latest version of ManagerDash for macOS and start
+                  managing your team more effectively.
                 </p>
                 <div className={styles.downloadButtons}>
-                  <a 
-                    href={dmgUrl} 
+                  <a
+                    href={dmgUrl}
                     className={styles.primaryDownloadButton}
                     download
                   >
-                    Download DMG v1.3.0
+                    Download DMG v{CURRENT_VERSION}
                   </a>
-                  <a 
-                    href={zipUrl} 
+                  <a
+                    href={zipUrl}
                     className={styles.secondaryDownloadLink}
                     download
                   >
-                    Download ZIP v1.3.0 instead
+                    Download ZIP v{CURRENT_VERSION} instead
                   </a>
                 </div>
               </div>
               <div className={styles.heroImage}>
-                <img 
-                  src={heroImageSrc} 
-                  alt="ManagerDash Team Skills Overview" 
+                <img
+                  src={heroImageSrc}
+                  alt="ManagerDash Team Skills Overview"
                   className={styles.heroImageImg}
                 />
               </div>
@@ -206,7 +207,11 @@ export default function Downloads(): ReactNode {
         <main className="container">
           <div className={styles.contentWrapper}>
             {Object.entries(imagesByCategory).map(([category, images]) => (
-              <CategorySection key={category} category={category} images={images} />
+              <CategorySection
+                key={category}
+                category={category}
+                images={images}
+              />
             ))}
           </div>
         </main>
