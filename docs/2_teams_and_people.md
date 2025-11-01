@@ -5,6 +5,8 @@ title: Configuring your team
 
 # Teams and People Management
 
+<img src={require('@site/static/img/app_img/alias_dashboard_light.png').default} alt="Alias Dashboard" style={{float: 'right', marginLeft: '20px', marginBottom: '20px', maxWidth: '400px'}} />
+
 This guide covers how to add, organize, and manage teams and individuals in ManagerDash.
 
 ## Understanding Aliases

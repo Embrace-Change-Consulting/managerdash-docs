@@ -3,6 +3,8 @@ sidebar_position: 5
 title: Feedback Management
 ---
 
+<img src={require('@site/static/img/app_img/alias_feedback_light.png').default} alt="Feedback Management" style={{float: 'right', marginLeft: '20px', marginBottom: '20px', maxWidth: '400px'}} />
+
 This guide covers how to capture, organize, and manage feedback in ManagerDash.
 
 ## Understanding Feedback

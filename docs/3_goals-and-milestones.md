@@ -3,6 +3,8 @@ sidebar_position: 3
 title: Goals and Milestones
 ---
 
+<img src={require('@site/static/img/app_img/alias_goals_light.png').default} alt="Goals Dashboard" style={{float: 'right', marginLeft: '20px', marginBottom: '20px', maxWidth: '400px'}} />
+
 This guide covers how to create, manage, and track goals and milestones in ManagerDash.
 
 ## Understanding Goals
